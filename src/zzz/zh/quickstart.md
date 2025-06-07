@@ -31,45 +31,44 @@ PC端：第七代英特尔酷睿i5，8G内存，英伟达GeForce GTX970及以上
 
 脚本请存放在 <span style="color:red"><strong>全英文的路径</strong></span> 下
 
-### 1.1.使用安装器（推荐）
+### 1.1 下载安装包
 
-如果你不懂得如何搭建python环境，请使用本方法。
+你可以在以下位置免费下载到一条龙最新的安装包
+- [github 的 Release 页面](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases) 
+- [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&source=zzzgh-release) 需要 Mirror CDK
+- 我们的官方 QQ 群(861603314)
 
-如果出现安装依赖失败，且你的电脑上曾经安装过anaconda，则可以卸载后anaconda重试本方法，或者使用 1.2 方法。
+### 1.2 安装
 
-1. 从 [最新 Release](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases/latest) 中下载 `ZenlessZoneZero-OneDragon-X.Y.Z.zip` (X.Y.Z 为版本号)
-2. 如果你无法访问Github，或者下载速度慢，可以参考 [如何访问Github](../../other/zh/visit_github.md)，或者你可以加入 QQ群 861603314，从群文件中下载。
-3. 下载后解压，运行 `OneDragon Installer.exe`
-4. 安装器中，点击一键安装即可。 
-5. 安装完成后，在安装器上点击`启动一条龙`，或运行 `OneDragon Launcher.exe`
+解压并启动 `ZenlessZoneZero-OneDragon-Installer.exe`   
+选择一个安装路径，比如D:/ZenlessZoneZero-OneDragon  
+> <font color="red">不要放在非英文字符路径下！！不要包含空格！！</font><br>
+> <font color="red">不要放在非英文字符路径下！！不要包含空格！！</font><br>
+> <font color="red">不要放在非英文字符路径下！！不要包含空格！！</font><br>
+根据你的网络环境和地理位置选择合适的下载源和代理配置  
+具体选择策略请查看 [代理说明](#_1-3-代理说明)  
+点击 一键安装 / 自定义安装  
+<div style="background-color:rgb(228, 169, 59); padding: 15px; border-radius: 5px;">
+  💡 tip：UV和Python环境安装这一步文件较多较大，可能需要10分钟以上时间下载，请耐心等待或尝试更换更合适的下载源
+</div> <br>
+安装完成后使用 `OneDragon Launcher.exe` 即可启动  
 
-### 1.2.使用安装器 + 已有的 anaconda（推荐）
+### 1.3 代理说明
+#### 下载源分为两类 官方源 镜像站
+官方源一般速度较慢且可能无法连接，所以推荐优先使用镜像站
 
-如果你之前因为其它脚本安装了 anaconda，则可以使用本方法
-
-1. 下载安装器，同 1.1 的前3步。
-2. 打开你的 anaconda prompt，并输入以下命令创建环境，中途提示输入 `y` 确认即可
-```shell
-conda create --name zzz-od python=3.11
-```
-3. 安装器中点击 `Git-默认安装` `代码版本-代码同步`
-4. Python虚拟环境点击 `选择已有`，选择刚刚创建环境的 `pythonw.exe`，目录大概如下
-```shell
-你的目录\anaconda\envs\zzz-od\pythonw.exe
-```
-5. 安装器中点击 `运行依赖-默认安装`，等待完成。
-6. 安装完成后，安装器上点击`启动一条龙`，或运行 `OneDragon Launcher.exe`
-
-### 1.3.使用源码运行
-
-如果你懂得如何搭建python环境(推荐使用 3.11.9)，请使用本方法
-
-1. 创建你自己的虚拟环境
-2. `git clone git@github.com:OneDragon-Anything/ZenlessZoneZero-OneDragon.git`
-3. `pip install -r requirements-prod.txt`
-4. 运行 （以下二选一）
-    - 复制 `env.sample.bat`，重命名为 `env.bat`，并修改内容为你的虚拟环境的 python 路径，使用 `OneDragon Launcher.exe` 运行。
-    - 将`src`文件夹加入环境变量`PYTHONPATH`，执行 `python src/zzz_od/gui/app.py` 。
+#### 代理类型分为 Github免费代理 个人代理 无  
+- Github 免费代理可以加速所有 Github 下载相关步骤（代码同步，环境下载，Python下载）可以在网络上找到很多免费提供加速的服务商  
+- 个人代理适用于拥有自己代理软件的用户，请填写代理软件对应的监听地址
+> 比如某代理软件默认监听地址为 http://127.0.0.1:7890
+- 无 一般不推荐使用，代理软件使用了 pac 模式进行代理或代理软件运行在上级路由器的用户可以直接使用此项
+<div style="background-color:rgb(228, 149, 59); padding: 15px; border-radius: 5px;">
+  💡 tip：如果使用了个人代理或在其他设备上运行了代理软件，使用镜像站可能会被站点拉黑，此时请切换下载源为官方源<br>
+  💡 tip2：免费的github代理地址推荐<br>
+  • https://github.moeyy.xyz/<br>
+  • https://ghfast.top/<br>
+  • https://ghfile.geekertao.top/
+</div> <br>
 
 ## 2.使用前须知
 
