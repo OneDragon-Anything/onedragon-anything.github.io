@@ -52,6 +52,6 @@ title: 崩坏：星穹铁道 一条龙
 
 如果喜欢本项目，可以为本站点赞助点维护费用~
 
-感谢 [小伙伴们的赞赏](https://github.com/DoctorReid/OneDragon-Thanks)
+感谢 [小伙伴们的赞赏](https://github.com/OneDragon-Anything/OneDragon-Thanks)
 
 ![微信赞赏](/images/sponsor_wechat.png)
