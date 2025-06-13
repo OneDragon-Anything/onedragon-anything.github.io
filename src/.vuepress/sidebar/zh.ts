@@ -49,6 +49,10 @@ export const zhSidebar = sidebar({
       prefix: "docs",
       children: [
         {
+          text: "⚠︎必要设置-必读⚠︎",
+          link: "config"
+        },
+        {
           text: "功能-一条龙",
           link: "feat_one_dragon"
         },
@@ -75,10 +79,6 @@ export const zhSidebar = sidebar({
         {
           text: "功能-手柄支持",
           link: "feat_gamepad"
-        },
-        {
-          text: "设置说明",
-          link: "config"
         },
       ],
     },
