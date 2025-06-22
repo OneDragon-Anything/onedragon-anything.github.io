@@ -45,3 +45,15 @@ title: 锄大地-路线注意点-翁法罗斯
 电梯需要在下方
 
 ![电梯需要在下方-1](./wfls/whqtlmyy_1_2.jpg)
+
+## 「云端遗堡」晨昏之眼
+
+### 1.最右方的传送点
+
+在3层，最右方
+
+![ydybchzy_1_1](./wfls/ydybchzy_1_1.jpg)
+
+电梯需要在下方
+
+![ydybchzy_1_2](./wfls/ydybchzy_1_2.jpg)

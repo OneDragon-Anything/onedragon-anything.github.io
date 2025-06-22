@@ -37,6 +37,10 @@ jobs:
       - name: 构建 VuePress 站点
         run: pnpm docs:build
 
+      # 添加 CNAME 文件到构建输出目录
+      - name: 复制 CNAME 文件
+        run: cp CNAME src/.vuepress/dist/
+
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: 部署到 GitHub Pages
