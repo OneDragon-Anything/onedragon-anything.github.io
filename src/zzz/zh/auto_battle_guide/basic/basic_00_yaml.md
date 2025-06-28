@@ -76,7 +76,7 @@ members:
     level: 60
 keywords: [ "脚本", "自动化" ]
 other_info:
-  homepage: "https://one-dragon.org/"
+  homepage: "https://one-dragon.com/"
   create_date: "2024-09-01"
 ```
 
@@ -131,7 +131,7 @@ members:
     level: 60
 keywords: [ "脚本", "自动化" ]
 other_info:
-  homepage: "https://one-dragon.org/"
+  homepage: "https://one-dragon.com/"
   create_date: "2024-09-01"
 ```
 
