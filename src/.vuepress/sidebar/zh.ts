@@ -53,24 +53,20 @@ export const zhSidebar = sidebar({
           link: "config"
         },
         {
-          text: "功能-一条龙",
-          link: "feat_one_dragon"
+          text: "功能-战斗助手",
+          link: "feat_battle_assistant"
         },
         {
-          text: "功能-零号空洞-枯萎之都",
-          link: "feat_hollow_zero"
+          text: "功能-一条龙",
+          link: "feat_one_dragon"
         },
         {
           text: "功能-零号空洞-迷失之地",
           link: "feat_lost_void"
         },
         {
-          text: "功能-战斗助手",
-          link: "feat_battle_assistant"
-        },
-        {
-          text: "功能-自定义指令",
-          link: "feat_custom_op"
+          text: "功能-零号空洞-枯萎之都",
+          link: "feat_hollow_zero"
         },
         {
           text: "功能-游戏助手",
@@ -90,6 +86,10 @@ export const zhSidebar = sidebar({
         {
           text: "基础",
           link: "basic/basic_00_yaml",
+        },
+        {
+          text: "功能-自定义指令",
+          link: "feat_custom_op"
         },
         {
           text: "朱鸢示例",
