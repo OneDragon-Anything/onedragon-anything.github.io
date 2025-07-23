@@ -1,0 +1,24 @@
+{
+    "notices": [
+        {
+            "title": "更新日志",
+            "date": "2025-7-13",
+            "content": "当前代码版本：{}\n最新版本: {}\n--- \n## 近期更新 \n **[获取一下commit列表放这里](https://api.github.com/repos/OneDragon-Anything/ZenlessZoneZero-OneDragon/commits)**"
+        },
+        {
+            "title": "常见问题",
+            "date": "2025-7-13",
+            "content": "**找几个高频的写一下，新手指引单开一个或者写这里？**\n## 更多问题请参考\n- [官网](https://one-dragon.com/zzz/zh/home.html)\n- [常见问题手册](https://www.kdocs.cn/l/cbSJUUNotJ3Z)"
+        },
+        {
+            "title": "长期公告",
+            "date": "2099-01-01",
+            "content": "本软件完全开源 免费\n不要在第三方渠道购买或下载\n谨防诈骗 盗号\n不要在 米游社 B站 微博 等平台的官方账号下讨论本软件\n[一条龙github主页](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)"
+        },
+        {
+            "title_debug": "锟斤拷烫烫烫烫??",
+            "date": "9999-99-99",
+            "content": "1.一条龙正式版不会要求你手动更新。如果你看到提示需要更新，请立刻关闭软件并再次启动。不要尝试使用它！\n2.存在异常的网络可能会导致一条龙更新时出现奇怪的问题，请立刻检查网络设置或更换网络，不要试图联系开发者。\n3.一条龙的开发者们都很和蔼，你完全可以无条件信任他们。\n??:非必要请勿触碰\n<details><font color='red'>你已经收到过警告了！</font>\n自定义主页背景密码: 861603314 (有些东西或许不应该被看见)\n自定义分支密码：git_checkout (每一个分支都通向不同的结局)\n自定义标题窗口密码：cloud (名字或许是很重要的东西？可能并不重要)</details>"
+        }
+    ]
+}
