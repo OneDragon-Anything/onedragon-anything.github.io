@@ -44,6 +44,11 @@ export const zhSidebar = sidebar({
       link: "quickstart",
     },
     {
+      text: "常见问题",
+      icon: "question",
+      link: "faq",
+    },
+    {
       text: "功能说明",
       icon: "lightbulb",
       prefix: "docs",
@@ -71,6 +76,10 @@ export const zhSidebar = sidebar({
         {
           text: "功能-游戏助手",
           link: "feat_game_assistant"
+        },
+        {
+          text: "功能-通知系统",
+          link: "feat_notify"
         },
         {
           text: "功能-手柄支持",
