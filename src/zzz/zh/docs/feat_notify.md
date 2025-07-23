@@ -19,3 +19,20 @@ APP版每天无推送上限，需要[下载APP](https://sc3.ft07.com/client)
 第三方推送版只需要在[官网](https://sc3.ft07.com/)绑定你的 微信/钉钉/飞书 即可  
 
 绑定或下载后，可以获取一个通知url，填入一条龙软件内即可直接使用
+
+### webhook
+- `URL`: 你的 webhook 地址
+- `BODY`: 通知内容  
+BODY例子 具体格式根据你的 webhook 要求来  
+$title 和 $content 作为标题和内容的占位符可以直接调用  
+```
+{
+"title":"$title",
+"content":"$content"
+}
+```
+- `HEADERS`: 请求头 一般用于给你填写 key  
+例: "Authorization": "Bearer your_token"  
+- `METHOD`: get或post 一般使用post
+- `CONTENT-TYPE`: 请求格式 需要和你的body保持一致  
+例: application/json
