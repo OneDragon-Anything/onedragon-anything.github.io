@@ -58,14 +58,14 @@ export const zhNavbar = navbar([
         link: "home"
       },
       {
-        text: "快速安装",
-        icon: "rocket",
-        link: "quickstart"
-      },
-      {
       text: "快速开始",
       icon: "rocket",
       link: "quickstart",
+      },
+      {
+      text: "常见问题",
+      icon: "question",
+      link: "faq",
       },
       {
         text: "功能说明",
