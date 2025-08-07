@@ -58,14 +58,14 @@ export const zhNavbar = navbar([
         link: "home"
       },
       {
-        text: "快速安装",
+        text: "快速开始",
         icon: "rocket",
-        link: "quickstart"
+        link: "quickstart",
       },
       {
-      text: "快速开始",
-      icon: "rocket",
-      link: "quickstart",
+        text: "常见问题",
+        icon: "question",
+        link: "faq",
       },
       {
         text: "功能说明",
@@ -92,8 +92,8 @@ export const zhNavbar = navbar([
             link: "feat_game_assistant"
           },
           {
-          text: "功能-通知系统",
-          link: "feat_notify"
+            text: "功能-通知系统",
+            link: "feat_notify"
           },
           {
             text: "功能-手柄支持",
