@@ -88,6 +88,10 @@ export const zhNavbar = navbar([
             link: "feat_lost_void"
           },
           {
+            text: "功能-锄大地",
+            link: "feat_world_patrol"
+          },
+          {
             text: "功能-游戏助手",
             link: "feat_game_assistant"
           },
