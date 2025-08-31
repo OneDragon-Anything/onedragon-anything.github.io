@@ -77,4 +77,5 @@ conda create --name sr-od python=3.11
 
 可以到这里查看 [安装运行常见问题](../../other/zh/common_qa.md)
 
-[常见问题和解决方案](https://docs.qq.com/doc/DRkJSU0tPaWNWTmdr)
+[常见问题和解决方案](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)
+无法解决？ 前往[官方频道](https://pd.qq.com/g/onedrag00n)寻求帮助！
