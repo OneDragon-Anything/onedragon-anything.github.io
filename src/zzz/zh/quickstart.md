@@ -78,7 +78,7 @@ UV和Python环境安装这一步文件较多较大，可能需要一定时间下
 - 启动一条龙
 
 安装完成后使用 `OneDragon-Launcher.exe` 即可启动  
-> 启动失败的话请参考[常见问题](faq.md) [热门问题文档](https://www.kdocs.cn/l/cbSJUUNotJ3Z)  
+> 启动失败的话请参考[常见问题](faq.md) [热门问题文档](https://docs.qq.com/doc/DRkJSU0tPaWNWTmdr)  
 > 安装完成后，请参照[必要设置](./docs/config.md)进行游戏和脚本的基础配置  
 > 高级启动参数请参考[启动参数](#高级启动参数)  
 
@@ -117,6 +117,7 @@ UV和Python环境安装这一步文件较多较大，可能需要一定时间下
   > https://github.moeyy.xyz/<br>
   > https://ghfast.top/<br>
   > https://ghfile.geekertao.top/
+  > https://gh.dpik.top/
 ::: 
 
 ## 高级启动参数
