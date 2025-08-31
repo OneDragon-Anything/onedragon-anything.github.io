@@ -5,7 +5,7 @@ title: 常见问题
 
 ::: important 使用说明
 - 点击上方「此页内容」可以打开目录栏快速查找
-- 大部分临时性问题会标记在[问题排查文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)
+- 大部分临时性问题会标记在[👉👉👉👉问题排查文档👈👈👈👈](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)
 - 如果查看了本文档仍旧无法解决你的问题，可以：
   1. 在 [Issues](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/issues) 查阅是否有相似问题
   2. 如无相似问题，可以通过 Issues 提问
@@ -14,6 +14,13 @@ title: 常见问题
 - 提问前请准备好：
   - 完整的截图
   - 日志文件
+:::
+
+## 文档！文档！文档！
+
+::: important 真的很重要的提示👇
+- 大部分临时性问题会标记在[👉👉👉👉问题排查文档👈👈👈👈](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)
+- 请一定要先阅读！你可以直接搜索！
 :::
 
 ## 如何有效提问？
@@ -56,7 +63,7 @@ title: 常见问题
 
 ## 常见问题快速解答
 
-我们推荐您前往 [腾讯文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5) 查阅更多问题解答。
+我们推荐您前往 [官方文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5) 查阅更多问题解答。
 在 [官方频道](https://pd.qq.com/g/onedrag00n) 导航栏中也有相关信息， 欢迎您留下宝贵的经验和建议！
 以下内容将在 2025-08-31 后冻结， 不再主动维护， 感谢您的支持与厚爱~
 
