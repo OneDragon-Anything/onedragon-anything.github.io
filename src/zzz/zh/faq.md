@@ -5,20 +5,23 @@ title: 常见问题
 
 ## 遇事不决！先看文档！
 
-::: important 真的很重要的提示👇
-- 大部分常见问题会记录在[👉👉👉👉（腾讯文档）问题排查文档（点击跳转）👈👈👈👈](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)
-- 请务必优先阅读！可选择在搜索框内输入关键词快速定位问题！
+大部分常见问题会记录在[问题排查文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)，你可以通过文档内的大纲来快速定位问题！
+
+::: important 重要
+# [👉👉👉👉问题排查文档👈👈👈👈](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)
 :::
 
-::: important 使用说明
-- 点击「此页内容」可以打开目录栏快速查找
-- 大部分常见问题会记录在[问题排查文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)
+## 如何寻求帮助？
+
+::: important 说明
+- 点击「此页内容」可以打开目录栏快速查找部分问题
+- 优先阅读[问题排查文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)，尝试自行解决
 - 如果查看了本文档仍旧无法解决你的问题，可以：
   1. 在 [Issues](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/issues) 查阅是否有相似问题
   2. 如无相似问题，可以通过 Issues 提问
   3. 或前往[官方频道](https://pd.qq.com/g/onedrag00n)
   4. 或前往用户交流群：861603314
-- 提问前请先阅读下方《如何有效提问》，按清单准备信息
+- 提问前请先阅读下方 `如何有效提问？` ，按清单准备信息
 :::
 
 ## 如何有效提问？
