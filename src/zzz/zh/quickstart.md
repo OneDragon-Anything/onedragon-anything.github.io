@@ -46,6 +46,9 @@ PC端：第七代英特尔酷睿i5，8G内存，英伟达GeForce GTX970及以上
 推荐下载带有 `-Full-Environment` 的超完整包来避免网络环境导致的安装失败
 Mirror源默认下载的就是这个包
 
+> 安装压缩包演示：
+<p align="center"><img src="/gif/zzz/download_zip.gif" alt="安装压缩包演示" width="550" height="300" /></p>
+
 ---
 
 - ### 使用安装器安装（推荐）
@@ -65,6 +68,12 @@ Mirror源默认下载的就是这个包
 2. 选择合适的下载源，`Full-Environment` 包默认已经包含了需要下载的工具，仅需要下载代码
 3. 默认预设了三个配置好的源，如果开加速器/代理软件，请选择海外源并参考下文[代理说明](#代理说明)进行配置
 4. 点击一键安装或自定义安装，按步骤点击下一步，等待配置完成
+
+> 启动安装器演示：
+<p align="center"><img src="/gif/zzz/open_installer.gif" alt="启动安装器演示" width="550" height="300" /></p>
+
+> 使用安装器演示：
+<p align="center"><img src="/gif/zzz/use_installer.gif" alt="使用安装器演示" width="550" height="300" /></p>
 
 ::: tip
 
