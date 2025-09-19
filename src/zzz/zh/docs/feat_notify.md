@@ -251,9 +251,11 @@ dd_bot_secret: "SEC123..."    # 对应界面"Secret"输入框
 - 使用加签可以提高安全性
 - 注意消息发送频率限制
 
-### 2. 飞书机器人
+### 2. 飞书/Lark 机器人
 推荐指数：⭐⭐⭐⭐
 特点：功能丰富，支持多种消息格式
+
+*先进团队，先用飞书*
 
 #### 界面配置项
 基础配置（仅文本消息）：
@@ -274,16 +276,42 @@ fs_appid: "cli_xxx"   # 对应界面"自建应用 App ID"输入框
 fs_appsecret: "xxx"   # 对应界面"自建应用 Secret"输入框
 ```
 
-配置步骤：
-1. 基础配置（必需）：
-   - 在飞书中创建群聊机器人
+### 配置步骤
+
+可参考[使用自定义机器人发送飞书卡片](https://open.feishu.cn/document/feishu-cards/quick-start/send-message-cards-with-custom-bot)和[上传图片](https://open.feishu.cn/document/server-docs/im-v1/image/create)了解更多。
+
+飞书和Lark的配置大同小异，但是网页端口不一致。
+
+1. 登录飞书/Lark客户端并创建一个群聊。
+   - 打开群聊的*设置*界面，
+   ![feishu_img_1](feat_notify/feishu_img_1.png)
+   - 点击*群机器人*，
+   ![feishu_img_2.png](feat_notify/feishu_img_2.png)
+   - 选择*添加机器人*>*自定义机器人*。
+   ![feishu_img_3.png](feat_notify/feishu_img_3.png)
    - 复制webhook地址，如：`https://open.feishu.cn/open-apis/bot/v2/hook/abc123def456`
+
+
+    ::: warning
+    请妥善保存好此 webhook 地址，不要公布在 Gitlab、博客等可公开查阅的网站上，避免地址泄露后被恶意调用发送垃圾消息。你也可以增加 安全设置，以保证信息安全。
+    :::
+
+
    - 提取最后一段`abc123def456`填入界面"密钥"输入框
 
 2. 图片支持配置（可选）：
-   - 访问[飞书开放平台](https://open.feishu.cn/app)
-   - 创建或选择一个应用
-   - 在"凭证与基础信息"页面：
+   - 访问[飞书开放平台](https://open.feishu.cn/app) 或[Lark开放平台](https://open.larksuite.com/app)
+   - 创建或选择一个应用.
+     ![feishu_img_4.png](feat_notify/feishu_img_4.png)
+   - 点击"添加应用能力"页面，赋予*机器人*能力。
+     ![feishu_img_5.png](feat_notify/feishu_img_5.png)
+   - 前往[飞书上传图片api](https://open.feishu.cn/document/server-docs/im-v1/image/create) 或[Lark上传图片api](https://open.larksuite.com/document/server-docs/im-v1/image/create)，给予应用*上传图片*权限。
+     ![feishu_img_6.png](feat_notify/feishu_img_6.png)
+   - 保存后前往应用基础页面，记录下你的appid和appsecret，并点击*创建版本*。
+     ![feishu_img_7.png](feat_notify/feishu_img_7.png)
+   - 写点东西发版
+     ![feishu_img_8.png](feat_notify/feishu_img_8.png)
+   - 在一条龙app内
      - 复制"App ID"填入界面"自建应用 App ID"输入框
      - 复制"App Secret"填入界面"自建应用 Secret"输入框
 
