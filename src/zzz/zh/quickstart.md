@@ -5,11 +5,20 @@ title: 绝区零 一条龙 快速开始
 
 ::: important
 
-请确保你使用的是最新版本安装包，过时的安装包版本可能产生的问题开发组不予解决
+请确保你使用的是最新版本安装包, 否则可能出现兼容性问题.
+- [点此确认安装包最新版本](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases)
+- [点此确认代码最新版本](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/commits/main/)
 
 :::
 
-## 环境准备
+## 环境检查/准备
+
+### 硬件
+
+建议使用较新的电脑运行, 我们的软件基于AI运行,依赖较新的硬件支持.
+
+为什么?👇
+<details>
 
 基于绝区零[官方公告](https://zzz.mihoyo.com/news/124528?category=279), 公测要求支持配置最低为
 
@@ -30,34 +39,87 @@ PC端：第七代英特尔酷睿i5，8G内存，英伟达GeForce GTX970及以上
 
  E3等更低的配置 算力不够/缺少指令集 无法保证逻辑流畅运行,请优先考虑升级硬件. AMD请参考各家天梯图等效换算.
 
-## 安装
+有社区案例表明可以在插入VR眼镜后的 运行windows系统的Steam Deck 上运行. 但是请注意，Steam Deck 并非完美支持，可能存在一些兼容性问题.
 
-脚本请存放在 <span style="color:red"><strong>全英文的路径</strong></span> 下
+如果你发现了新的兼容硬件不在上述清单中, [欢迎分享](https://pd.qq.com/g/onedrag00n?subc=716388285)
+</details>
+
+### 操作系统
+
+- 运行较新的Windows 10/11 64位系统. 
+  - 打开你的windows update, 确认升级到最新版本.
+
+
+### 网络
+
+> 你可以先跳过这个步骤, 运行失败的时候再回来看看
+
+通过下方详情中链接确认连通性.每个大类至少要有一个联通.
+如果都不通, 尝试使用手机热点或其他方式.
+
+<details>
+
+- 代码源
+  - [Github](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)
+  - [Gitee](https://gitee.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)
+- PIP源
+  - [官方pip源](https://pypi.org/project/pip/)
+  - [清华pip镜像源](https://mirrors.tuna.tsinghua.edu.cn/help/pypi/)
+  - [阿里云pip镜像源](https://mirrors.aliyun.com/pypi/)
+
+</details>
+
+## 下载
 
 <a id="download-package"></a>
-- ### 下载安装包
 
 你可以在以下位置下载到一条龙最新的安装包
-> - [GitHub 的 Release 页面](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases) 
-> - [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&source=zzzgh-release) 需要 Mirror CDK（不免费但是可以支持开发者的开发）
-> - 我们的官方[频道](https://pd.qq.com/g/onedrag00n)
-> - 我们的官方 QQ 群 (861603314)
+- [GitHub 的 Release 页面](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases) 
+- [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&source=zzzgh-release) 需要 Mirror CDK（不免费但是可以支持开发者的开发）
+- 我们的[官方频道](https://pd.qq.com/g/onedrag00n)
+- 或前往[频道关联群聊](https://pd.qq.com/g/onedrag00n)
 
 推荐下载带有 `-Full-Environment` 的超完整包来避免网络环境导致的安装失败
 Mirror源默认下载的就是这个包
 
----
+<details>
+源码下载, 仅适用高级玩家
 
-- ### 使用安装器安装（推荐）
-> 此处教程以 2.1.1版本的 `Full-Environment` 的完整包为基准
-> <font color="red">不要放在非英文字符路径下！！不要包含空格！！</font><br>
-> <font color="red">不要放在非英文字符路径下！！不要包含空格！！</font><br>
-> <font color="red">不要放在非英文字符路径下！！不要包含空格！！</font><br>
+```bash
+git clone https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon.git
+```
+</details>
 
-- 选择要安装的位置并将文件解压
+## 安装
 
-选择一个安装位置，比如 **D盘的ZZZ-OneDragon文件夹**  
-将下载的压缩包内文件解压进去
+在某个**固态磁盘**的根目录创建一个全英文的空文件夹, 然后再开始我们的安装过程.例如
+
+```bash
+D:\ZZZ-OD
+```
+
+<details>
+
+1. 不要放在非英文字符路径下
+   1. 例如 "C:\用户\你的名字\..." 这种路径会导致python环境无法创建
+   2. 或者 "D:\英文\one-dragon\...", 也不可以
+2. 不要包含空格
+   1. 可能会导致路径解析错误
+3. 不要使用过长的路径名
+   1. 例如"C:\THISPATHISWAYTOOOOOOOOOOOOOOOOOOOOOOOOOOOOLONG\..." 会导致路径解析错误
+4. 一定要使用固态硬盘
+   1. 用机械硬盘不是不能用, 但是凹深渊总是少几千分的话...
+5. 如果你没有D盘, 那你就用C盘吧
+
+还有一些其他的奇怪情况, 无法穷举, 请务必按照上述要求创建路径
+</details>
+
+### 使用安装器安装（推荐）
+
+> 此处教程以 `2.1.1-beta1` 版本的 `Full-Environment` 的完整包为基准
+
+1. 解压缩安装包到刚才创建的路径
+   1. ![folder_overview](media/quickstart/folder_overview.png)
 
 - 运行安装器
 
@@ -85,9 +147,19 @@ UV和Python环境安装这一步文件较多较大，可能需要一定时间下
 ---
 
 - ### 手动安装步骤（高级）
+
 <details>
 
-咕咕咕咕
+高级玩家废话少说
+
+```bash
+git clone https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon.git
+cd ZenlessZoneZero-OneDragon
+pip install -r requirements-prod.txt
+pip install -r requirements-gamepad.txt
+# 启动游戏
+./onedragon-launcher.exe
+```
 
 </details>
 

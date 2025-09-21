@@ -20,7 +20,7 @@ title: 常见问题
   1. 在 [Issues](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/issues) 查阅是否有相似问题
   2. 如无相似问题，可以通过 Issues 提问
   3. 或前往[官方频道](https://pd.qq.com/g/onedrag00n)
-  4. 或前往用户交流群：861603314
+  4. 或前往[频道关联群聊](https://pd.qq.com/g/onedrag00n)
 - 提问前请先阅读下方 `如何有效提问？` ，按清单准备信息
 :::
 
