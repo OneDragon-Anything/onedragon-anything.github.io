@@ -46,7 +46,7 @@ PC端：第七代英特尔酷睿i5，8G内存，英伟达GeForce GTX970及以上
 
 ### 操作系统
 
-- 运行较新的Windows 10/11 64位系统. 
+- 运行较新的Windows 10/11 64位系统.
   - 打开你的windows update, 确认升级到最新版本.
 
 
@@ -74,7 +74,7 @@ PC端：第七代英特尔酷睿i5，8G内存，英伟达GeForce GTX970及以上
 <a id="download-package"></a>
 
 你可以在以下位置下载到一条龙最新的安装包
-- [GitHub 的 Release 页面](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases) 
+- [GitHub 的 Release 页面](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases)
 - [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&source=zzzgh-release) 需要 Mirror CDK（不免费但是可以支持开发者的开发）
 - 我们的[官方频道](https://pd.qq.com/g/onedrag00n)
 - 或前往[频道关联群聊](https://pd.qq.com/g/onedrag00n)
@@ -119,7 +119,7 @@ D:\ZZZ-OD
 > 此处教程以 `2.1.1-beta1` 版本的 `Full-Environment` 的完整包为基准
 
 1. 解压缩安装包到刚才创建的路径
-   1. ![folder_overview](media/quickstart/folder_overview.png)
+   1. ![folder_overview](./quickstart/folder_overview.png)
 
 - 运行安装器
 
@@ -139,10 +139,10 @@ UV和Python环境安装这一步文件较多较大，可能需要一定时间下
 
 - 启动一条龙
 
-安装完成后使用 `OneDragon-Launcher.exe` 即可启动   
-> 启动失败请参考：[常见问题](faq.md) 或 [热门问题文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)    
-> 安装完成后，请参照[必要设置](./docs/config.md)进行游戏和脚本的基础配置  
-> 高级启动参数请参考[启动参数](#高级启动参数)  
+安装完成后使用 `OneDragon-Launcher.exe` 即可启动
+> 启动失败请参考：[常见问题](faq.md) 或 [热门问题文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)
+> 安装完成后，请参照[必要设置](./docs/config.md)进行游戏和脚本的基础配置
+> 高级启动参数请参考[启动参数](#高级启动参数)
 
 ---
 
@@ -167,18 +167,18 @@ pip install -r requirements-gamepad.txt
 
 ## 脚本如何更新
 
-目前版本一条龙默认启用**自动更新**功能，在你启动 `OneDragon-Launcher.exe` 时会尝试一次自动更新  
-启动器右上角会显示当前代码版本的哈希值  
-可在启动器左下角点击 `代码同步` 功能进行代码的手动更新，或关闭自动更新  
-**一条龙是基于图像识别，所以及时更新识别模型非常重要**  
-可以通过 `设置-资源下载` 进行模型的选择和更新，模型后面的数字为日期，一般来说越新越好  
+目前版本一条龙默认启用**自动更新**功能，在你启动 `OneDragon-Launcher.exe` 时会尝试一次自动更新
+启动器右上角会显示当前代码版本的哈希值
+可在启动器左下角点击 `代码同步` 功能进行代码的手动更新，或关闭自动更新
+**一条龙是基于图像识别，所以及时更新识别模型非常重要**
+可以通过 `设置-资源下载` 进行模型的选择和更新，模型后面的数字为日期，一般来说越新越好
 
 ---
 
 ### 代理说明
 
 #### 代理类型分为 **Github免费代理 个人代理 无**
-- Github 免费代理可以加速所有 Github 下载相关步骤（代码同步，环境下载，Python下载）可以在网络上找到很多免费提供加速的服务商  
+- Github 免费代理可以加速所有 Github 下载相关步骤（代码同步，环境下载，Python下载）可以在网络上找到很多免费提供加速的服务商
 - 个人代理适用于拥有自己代理软件的用户，请填写代理软件对应的监听地址
 > 比如某代理软件默认监听地址为 http://127.0.0.1:7890
 - 无 一般不推荐使用，代理软件使用了 pac 模式 代理软件运行在上级路由器 海外 的用户可以直接使用此项
@@ -190,7 +190,7 @@ pip install -r requirements-gamepad.txt
   > https://ghfast.top/<br>
   > https://ghfile.geekertao.top/
   > https://gh.dpik.top/
-::: 
+:::
 
 ## 高级启动参数
 <details>
