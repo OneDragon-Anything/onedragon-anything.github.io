@@ -158,7 +158,7 @@ cd ZenlessZoneZero-OneDragon
 pip install -r requirements-prod.txt
 pip install -r requirements-gamepad.txt
 # 启动游戏
-./onedragon-launcher.exe
+./OneDragon-Launcher.exe
 ```
 
 </details>
@@ -169,7 +169,7 @@ pip install -r requirements-gamepad.txt
 
 目前版本一条龙默认启用**自动更新**功能，在你启动 `OneDragon-Launcher.exe` 时会尝试一次自动更新
 启动器右上角会显示当前代码版本的哈希值
-可在启动器左下角点击 `代码同步` 功能进行代码的手动更新，或关闭自动更新
+可在启动器左下角点击 `代码同步` 功能进行代码的手动更新
 **一条龙是基于图像识别，所以及时更新识别模型非常重要**
 可以通过 `设置-资源下载` 进行模型的选择和更新，模型后面的数字为日期，一般来说越新越好
 
