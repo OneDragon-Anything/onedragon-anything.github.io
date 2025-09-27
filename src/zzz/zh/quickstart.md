@@ -79,8 +79,9 @@ PC端：第七代英特尔酷睿i5，8G内存，英伟达GeForce GTX970及以上
 - 我们的[官方频道](https://pd.qq.com/g/onedrag00n)
 - 或前往[频道关联群聊](https://pd.qq.com/g/onedrag00n)
 
-推荐下载带有 `-Full-Environment` 的超完整包来避免网络环境导致的安装失败
+> 推荐下载带有 `-Full-Environment` 的超完整包来避免网络环境导致的安装失败
 Mirror源默认下载的就是这个包
+> ![download_zip](quickstart/download_zip.gif)
 
 <details>
 源码下载, 仅适用高级玩家
@@ -124,10 +125,13 @@ D:\ZZZ-OD
 
 - 运行安装器
 
-1. 点击浏览选择路径，默认选择当前解压的文件夹
-2. 选择合适的下载源，`Full-Environment` 包默认已经包含了需要下载的工具，仅需要下载代码
+1. **以管理员身份运行安装器**，等待安装器界面打开
+   ![open_installert](quickstart/open_installer.gif)
+2. 点击浏览选择路径，默认选择当前解压的文件夹
+  选择合适的下载源，`Full-Environment` 包默认已经包含了需要下载的工具，仅需要下载代码
 3. 默认预设了三个配置好的源，如果开加速器/代理软件，请选择海外源并参考下文[代理说明](#代理说明)进行配置
 4. 点击一键安装或自定义安装，按步骤点击下一步，等待配置完成
+   ![use_installer](quickstart/use_installer.gif)
 
 ::: tip
 
