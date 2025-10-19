@@ -276,7 +276,7 @@ fs_appid: "cli_xxx"   # 对应界面"自建应用 App ID"输入框
 fs_appsecret: "xxx"   # 对应界面"自建应用 Secret"输入框
 ```
 
-### 配置步骤
+#### 配置步骤
 
 可参考[使用自定义机器人发送飞书卡片](https://open.feishu.cn/document/feishu-cards/quick-start/send-message-cards-with-custom-bot)和[上传图片](https://open.feishu.cn/document/server-docs/im-v1/image/create)了解更多。
 
@@ -297,7 +297,7 @@ fs_appsecret: "xxx"   # 对应界面"自建应用 Secret"输入框
     :::
 
 
-   - 提取最后一段`abc123def456`填入界面"密钥"输入框
+   - 提取最后一段`abc123def456`填入界面"Webhook地址后缀"输入框
 
 2. 图片支持配置（可选）：
    - 访问[飞书开放平台](https://open.feishu.cn/app) 或[Lark开放平台](https://open.larksuite.com/app)
@@ -560,11 +560,11 @@ webhook_body: |
 ```
 
 支持的变量：
-- `${title}`, `{{title}}`: 通知标题
-- `${content}`, `{{content}}`: 通知内容 
-- `${timestamp}`, `{{timestamp}}`: 当前时间(YYYY-MM-DD HH:mm:SS)
-- `${iso_timestamp}`, `{{iso_timestamp}}`: ISO格式时间
-- `${unix_timestamp}`, `{{unix_timestamp}}`: UNIX时间戳
+- `$title`, `{{title}}`: 通知标题
+- `$content`, `{{content}}`: 通知内容 
+- `$timestamp`, `{{timestamp}}`: 当前时间(YYYY-MM-DD HH:mm:SS)
+- `$iso_timestamp`, `{{iso_timestamp}}`: ISO格式时间
+- `$unix_timestamp`, `{{unix_timestamp}}`: UNIX时间戳
 - `$image`: 图片base64编码(当提供图片时)
 
 ### 8. 邮件 (SMTP)
@@ -659,6 +659,8 @@ gotify_priority: 5  # 消息优先级(1-10)，默认5
 
 ### 10. 智能微秘书
 
+该平台仅接受邀请注册
+
 #### 基础配置
 ```yaml
 aibotk_key: "your-api-key"    # API密钥
@@ -678,6 +680,13 @@ wxpusher_app_token: "AT_xxxx"           # 应用Token
 wxpusher_topic_ids: "1111;2222;3333"    # 主题ID，分号分隔
 wxpusher_uids: "UID_xxxx;UID_yyyy"      # 用户ID，分号分隔
 ```
+
+配置说明：
+
+1. 登陆 WxPusher 官网
+2. 注册后创建应用，获取appToken
+3. 网页上，用你的微信号扫二维码关注应用，在用户列表可以获取到UID
+4. 该平台已经无法推送微信公众号，需要在公众号上点击推送服务->下载APP后接收
 
 ## 测试验证
 推荐使用一条龙内置的测试功能进行验证。如需手动测试，请参考[故障自助排查指南](#故障自助排查指南)中的测试方法。
