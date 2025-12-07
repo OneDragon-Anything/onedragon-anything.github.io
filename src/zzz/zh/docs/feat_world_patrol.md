@@ -5,25 +5,25 @@ date: 2025-08-25
 ---
 
 :::important
-- 锄大地功能正在测试中，可能会有一些问题，请提[issue](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/issues)或[PR](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/pulls) 
-- 在使用前，请务必运行一次位于 `游戏助手` 内的 `鼠标校准` 
+- 锄大地功能意见或问题，请前往[issue](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/issues)或[PR](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/pulls)
+- 使用此功能前，建议勘域编队中要有一名合适的行走位
 :::
 
 ## 快速开始-锄大地
 
-1. 在 `游戏助手` 内的 `鼠标校准` 页面进行鼠标校准
-2. 在 `锄大地` 页面选择路线
-3. 启动 `锄大地` 功能
+用于自动打绝区零大世界里的野怪，获得丁尼代理人经验和音擎经验材料。
 
-## 锄大地
+锄大地主体由[自动战斗](./feat_battle_assistant.md)和[路线名单](#路线列表)两部分组成，可<font color="red">使用已有配置</font>或自行创建配置
 
-锄大地主体由[自动战斗](./feat_battle_assistant.md)和[路线](#路线创建)两部分组成
-`自动战斗` 可自行选择已有配置
-`路线` 可使用已有配置或自行创建配置
+**支持区域**：莱姆尼安空洞
+
+**相关帖子**：[锄大地使用方法](https://pd.qq.com/s/cofn3sf28?b=2)
+
+![锄大地](feat_world_patrol/feat_world_patrol.png)
 
 ## 锄大地录制
 
-### 路线创建
+### 路线列表
 
 1. 点击 `名单选择` 右侧的框，选择白名单/黑名单模式
 2. 点击 `新建` 创建路线，输入路线名称

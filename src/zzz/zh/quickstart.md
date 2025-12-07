@@ -78,7 +78,7 @@ PC端：第七代英特尔酷睿i5，8G内存，英伟达GeForce GTX970及以上
 - 我们的[官方频道](https://pd.qq.com/g/onedrag00n)
 - 或前往[频道关联群聊](https://pd.qq.com/g/onedrag00n)
 
-> 推荐下载带有 `-Full-Environment` 的超完整包来避免网络环境导致的安装失败。
+> 推荐下载带有 `-Full-Environment` 的最新超完整包来避免网络环境导致的安装失败。
 >
 > Mirror源默认下载的就是这个包。
 >
@@ -119,7 +119,7 @@ D:\ZZZ-OD
 
 ### **使用安装器安装（推荐）**
 
-> 此处教程以 `2.1.1-beta1` 版本的 `Full-Environment` 的完整包为基准。
+> 请使用最新的安装包，此处教程仅以 `2.1.1-beta1` 版本的 `Full-Environment` 的完整包做示范。
 
 - 解压缩安装包到刚才创建的路径。
 
@@ -178,7 +178,7 @@ pip install -r requirements-gamepad.txt
 ### **代理说明**
 
 - Github 免费代理，可以加速所有 Github 下载相关步骤（代码同步，环境下载，Python下载）可以在网络上找到很多免费提供加速的服务商。
-  
+
 - 个人代理，适用于拥有自己代理软件的用户，请填写代理软件对应的监听地址。
   > 比如某代理软件默认监听地址为 http://127.0.0.1:7890
 

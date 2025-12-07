@@ -26,13 +26,14 @@ title: 绝区零 一条龙
     <br>
 </div>
 
-> 如果觉得项目对你有帮助  
-> → 速速前往[Github主页](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)点亮右上角的star！  
+> 如果觉得项目对你有帮助
+> → 速速前往[Github主页](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)点亮右上角的star！
 
 ## 支持功能
 你想要的功能，我们都帮你安排了！
+> <font color="red">游戏内所有的点一次就会消失的不再提醒，都需要自己先点一次，脚本不会做兼容，因为几乎无法测试。</font>
 
-- **邦布日常全托管** 
+- **邦布日常全托管**
     - 自动营业&刮卡：邦布化身店长，代管「Random Play」日常营业，绳匠躺着就能收租！
     - 体力精细规划：清空体力？交给邦布的“**萝卜导航**”就行！
     - 邮件/兑换码领取：绳网密信直达！再也不怕忘领**前瞻兑换码**了！
