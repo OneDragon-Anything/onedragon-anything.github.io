@@ -16,7 +16,7 @@ title: 功能-通知
 >    - `配置步骤`：详细的配置流程指导
 > 2. 所有参数都标注了是否必填
 > 3. 界面配置项与配置文件参数一一对应，方便查找
-> 4. 本文档基于公开资料和代码实现整理，非所有内容都已100%证实；如发现问题，欢迎前往[官方频道](https://pd.qq.com/g/onedrag00n)或 ISSUE 区反馈。
+> 4. 本文档基于开发经验、公开资料和代码实现整理，若发现问题欢迎前往[issue](https://github.com/OneDragon-Anything/onedragon-anything.github.io/issues)反馈。
 
 ## 目录
 - [基础说明](#基础说明)
@@ -24,9 +24,6 @@ title: 功能-通知
 - [配置步骤](#配置步骤)
 - [详细配置参数](#详细配置参数)
 - [故障自助排查指南](#故障自助排查指南)
-- [安全提示](#安全提示)
-
-
 
 ## 基础说明
 
@@ -38,26 +35,36 @@ title: 功能-通知
 
 ## 通知方式
 
-目前支持以下通知方式(按推荐度排序)：
-1. 特别推荐（新手首选）：
-  - Server酱：配置最简单，支持微信接收
-  - Bark：iOS设备专用，配置简单直观
-  - pushplus：微信推送，配置简单
+目前支持以下通知方式（按文中顺序列出并可点击跳转）：
 
-2. 推荐使用（稳定可靠）：
-  - 钉钉机器人：企业级稳定性，配置简单
-  - 飞书机器人：功能丰富，配置相对简单
-  - 企业微信机器人：企业级服务，稳定可靠
+1. [新手推荐](#新手推荐)
+推荐指数：⭐⭐⭐
+   - [Server酱](#serverchan)：有server酱³（server酱免费app版）和server酱·Turbo版（支持多渠道推送），配置简单
+   - [Bark](#bark)：iOS设备专用，配置简单
+   - [PushPlus](#pushplus)：微信推送，配置简单
 
-3. 进阶使用（功能强大）：
-  - OneBot(QQ机器人)：功能丰富，需要部署服务
-  - 企业微信应用：企业级功能，需要管理权限
-  - Telegram：国际化服务，需要特殊网络
+2. [推荐使用（稳定可靠）](#推荐使用)
+推荐指数：⭐⭐⭐
+   - [SMTP邮件](#smtp)：传统方式，配置较简单
+   - [钉钉机器人](#dingtalk)：企业级服务，配置简单
+   - [飞书/Lark 机器人](#feishu)：功能丰富，配置较简单
+   - [企业微信机器人](#workweixinbot)：企业级服务，配置简单
 
-4. 特殊需求：
-  - Webhook：完全自定义，需要技术能力
-  - SMTP邮件：传统方式，配置较复杂
-  - Discord：国外服务，访问不稳定
+3. [进阶使用（功能强大）](#进阶使用)
+推荐指数：⭐⭐
+   - [企业微信应用](#workweixinapp)：企业级功能，需要管理权限
+   - [OneBot](#onebot)：(QQ机器人)功能丰富，需要部署服务
+   - [通用Webhook](#webhook)：完全自定义，需要技术能力
+
+4. [特殊需求](#特殊需求)
+推荐指数：⭐
+   - [Discord](#discord)：国际化服务，需要特殊网
+   - [Telegram](#telegram)：国际化服务，需要特殊网
+   - [Ntfy](#ntfy)：开源免费、基于HTTP协议的轻量级消息推送服务 ，无需注册账号就能使用
+   > 下面的方法无人维护，遇到问题请自行解决；推荐指数：~~⭐~~
+   - [Gotify](#gotify)：自建推送服务，适合私有化部署
+   - [智能微秘书](#aibotk)：邀请制平台，适合企业/专属场景网络
+   - [WxPusher](#wxpusher)：微信小众推送方案
 
 ## 配置步骤
 
@@ -88,10 +95,12 @@ title: 功能-通知
 
 ## 详细配置参数
 
-### 特别推荐（新手首选）
+### 新手推荐
+推荐指数：⭐⭐⭐
 
+<a id="serverchan"></a>
 ### 1. Server酱
-推荐指数：⭐⭐⭐⭐⭐
+
 特点：配置最简单，支持微信接收，免费使用，适合个人用户
 
 #### 界面配置项
@@ -106,19 +115,19 @@ serverchan_push_key: "SCT123456..."  # 对应界面"PUSH_KEY"输入框
 
 配置步骤：
 1. 获取SendKey：
-   - 访问 [Server酱官网](https://sct.ftqq.com/)
+   - 访问[server酱³](https://sc3.ft07.com/sendkey)或[Server酱·Turbo版](https://sct.ftqq.com/sendkey)并登录账号
    - 登录后获取SendKey
 2. 在一条龙设置界面：
    - 找到"PUSH_KEY"输入框
    - 填入获取的SendKey
 
 注意事项：
-- 免费版每天有额度限制
-- 支持微信扫码绑定，接收更稳定
-- 消息推送延迟很小
+- server酱³（server酱免费app版），折腾完可以下载[server酱](https://sc3.ft07.com/client)应用（兼容市面上几乎所有手机系统），来接收消息
+- server酱·Turbo版（支持多渠道推送），免费版每天有额度限制，完全不够用故必须订阅会员，支持微信扫码绑定来接受消息
 
+<a id="bark"></a>
 ### 2. Bark
-推荐指数：⭐⭐⭐⭐⭐
+
 特点：iOS设备专用，配置极简，通知效果好
 
 #### 界面配置项
@@ -152,7 +161,7 @@ bark_url: "打开的链接"     # 点击通知打开的URL
 2. 获取推送密钥：
    - 打开APP，直接复制显示的URL
    - 提取URL最后的密钥部分
-   
+
 3. 在一条龙设置界面填写：
    - 必填：`推送地址或 Key`
    - 可选：根据需要配置其他选项
@@ -162,8 +171,9 @@ bark_url: "打开的链接"     # 点击通知打开的URL
 - 可以自建服务器使用
 - 支持丰富的通知效果
 
+<a id="pushplus"></a>
 ### 3. PushPlus
-推荐指数：⭐⭐⭐⭐
+
 特点：微信推送服务，配置简单，支持多种模板
 
 #### 界面配置项
@@ -207,367 +217,12 @@ push_plus_callbackurl: ""         # 对应"发送结果回调地址"输入框
 - 支持多种消息模板
 - 微信接收稳定可靠
 
-### 推荐使用（稳定可靠）
-
-### 1. 钉钉机器人
-推荐指数：⭐⭐⭐⭐
-特点：企业级服务，稳定可靠，安全性高
-
-#### 界面配置项
-基础配置（必填其一）：
-- `Token`: 钉钉机器人的访问令牌
-  - 从webhook地址中提取`access_token=`后面的部分
-
-安全设置（推荐）：
-- `Secret`: 钉钉机器人的签名密钥
-  - 在机器人创建时选择"加签"可获得
-
-#### 配置文件参数
-```yaml
-# 基础配置（必填其一）
-dd_bot_token: "abc123..."     # 对应界面"Token"输入框
-
-# 安全设置（推荐）
-dd_bot_secret: "SEC123..."    # 对应界面"Secret"输入框
-```
-
-配置步骤：
-1. 创建机器人：
-   - 打开钉钉群 -> 智能群助手 -> 添加机器人
-   - 选择"自定义机器人"
-   - 推荐选择"加签"安全设置方式
-
-2. 获取配置信息：
-   - Token获取：
-     - 复制webhook地址（格式：`https://oapi.dingtalk.com/robot/send?access_token=abc123`）
-     - 提取`access_token=`后面的部分填入界面"Token"输入框
-   
-   - Secret获取（如果选择加签）：
-     - 复制显示的加签密钥
-     - 填入界面"Secret"输入框
-
-注意事项：
-- 推荐同时配置Token和Secret
-- 使用加签可以提高安全性
-- 注意消息发送频率限制
-
-### 2. 飞书/Lark 机器人
-推荐指数：⭐⭐⭐⭐
-特点：功能丰富，支持多种消息格式
-
-*先进团队，先用飞书*
-
-#### 界面配置项
-基础配置（仅文本消息）：
-- `密钥`: 飞书机器人的webhook密钥（必填）
-  - 从webhook地址中提取最后一段字符串
-
-图片消息支持（可选）：
-- `自建应用 App ID`: 用于发送图片的应用ID
-- `自建应用 Secret`: 用于发送图片的应用密钥
-
-#### 配置文件参数
-```yaml
-# 基础配置 - 仅文本消息
-fs_key: "xxxxxx"      # 对应界面"密钥"输入框
-
-# 可选配置 - 支持图片发送
-fs_appid: "cli_xxx"   # 对应界面"自建应用 App ID"输入框
-fs_appsecret: "xxx"   # 对应界面"自建应用 Secret"输入框
-```
-
-#### 配置步骤
-
-可参考[使用自定义机器人发送飞书卡片](https://open.feishu.cn/document/feishu-cards/quick-start/send-message-cards-with-custom-bot)和[上传图片](https://open.feishu.cn/document/server-docs/im-v1/image/create)了解更多。
-
-飞书和Lark的配置大同小异，但是网页端口不一致。
-
-1. 登录飞书/Lark客户端并创建一个群聊。
-   - 打开群聊的*设置*界面，
-   ![feishu_img_1](feat_notify/feishu_img_1.png)
-   - 点击*群机器人*，
-   ![feishu_img_2.png](feat_notify/feishu_img_2.png)
-   - 选择*添加机器人*>*自定义机器人*。
-   ![feishu_img_3.png](feat_notify/feishu_img_3.png)
-   - 复制webhook地址，如：`https://open.feishu.cn/open-apis/bot/v2/hook/abc123def456`
-
-
-    ::: warning
-    请妥善保存好此 webhook 地址，不要公布在 Gitlab、博客等可公开查阅的网站上，避免地址泄露后被恶意调用发送垃圾消息。你也可以增加 安全设置，以保证信息安全。
-    :::
-
-
-   - 提取最后一段`abc123def456`填入界面"Webhook地址后缀"输入框
-
-2. 图片支持配置（可选）：
-   - 访问[飞书开放平台](https://open.feishu.cn/app) 或[Lark开放平台](https://open.larksuite.com/app)
-   - 创建或选择一个应用.
-     ![feishu_img_4.png](feat_notify/feishu_img_4.png)
-   - 点击"添加应用能力"页面，赋予*机器人*能力。
-     ![feishu_img_5.png](feat_notify/feishu_img_5.png)
-   - 前往[飞书上传图片api](https://open.feishu.cn/document/server-docs/im-v1/image/create) 或[Lark上传图片api](https://open.larksuite.com/document/server-docs/im-v1/image/create)，给予应用*上传图片*权限。
-     ![feishu_img_6.png](feat_notify/feishu_img_6.png)
-   - 保存后前往应用基础页面，记录下你的appid和appsecret，并点击*创建版本*。
-     ![feishu_img_7.png](feat_notify/feishu_img_7.png)
-   - 写点东西发版
-     ![feishu_img_8.png](feat_notify/feishu_img_8.png)
-   - 在一条龙app内
-     - 复制"App ID"填入界面"自建应用 App ID"输入框
-     - 复制"App Secret"填入界面"自建应用 Secret"输入框
-
-### 3. OneBot (QQ机器人)
-
-#### 界面配置项
-服务配置：
-- `请求地址`: go-cqhttp服务地址（必填，默认`http://127.0.0.1:5700`）
-- `Token`: API访问令牌（可选，取决于go-cqhttp配置）
-
-消息接收配置（至少填写一项）：
-- `QQ 号`: 接收私聊消息的QQ号
-- `群号`: 接收群聊消息的群号
-
-#### 配置文件参数
-```yaml
-# 服务配置
-onebot_url: "http://127.0.0.1:5700"  # 对应界面"请求地址"输入框
-onebot_token: "your-access-token"     # 对应界面"Token"输入框
-
-# 消息接收配置（至少配置一项）
-onebot_user: "12345678"   # 对应界面"QQ 号"输入框
-onebot_group: "87654321"  # 对应界面"群号"输入框
-```
-
-配置步骤：
-1. 环境准备：
-   - 确保go-cqhttp已正确安装和配置
-   - 确保服务正常运行
-
-2. 基础配置：
-   - `请求地址`：
-     - 本地部署填写：`http://127.0.0.1:5700`
-     - 远程部署填写实际服务器地址
-   - `Token`：
-     - 如果go-cqhttp配置了访问令牌，需要填写
-     - 否则可以留空
-
-3. 消息接收配置（至少选择一项）：
-   - 私聊消息：填写接收消息的QQ号
-   - 群聊消息：填写接收消息的群号
-   - 可以同时配置，消息会同时发送到私聊和群聊
-
-4. 验证配置：
-   - 使用一条龙的测试功能发送测试消息
-   - 确认消息能正常接收
-
-
-
-### 4. 企业微信
-
-企业微信支持两种通知方式：应用消息和群机器人，可以选择其一配置。
-> warning: 目前有社区反馈称应用消息实际需要企业认证，较难落地，请酌情考虑。
-
-#### 企业微信应用 - 界面配置项
-- `企业微信应用`: 填写以下参数，用逗号分隔（必填）：
-  1. 企业ID
-  2. 应用Secret
-  3. 通知对象（@all表示所有人）
-  4. 应用ID
-  5. 图片ID（可选）
-
-#### 企业微信机器人 - 界面配置项
-- `企业微信机器人 Key`: 机器人webhook的key（必填）
-- `企业微信代理地址`: 自定义API地址（可选）
-
-#### 配置文件参数
-```yaml
-# 方式1：应用消息
-qywx_am: "企业ID,应用Secret,通知对象,应用ID,图片ID"  # 对应界面"企业微信应用"输入框
-
-# 方式2：群机器人
-qywx_key: "abc123..."     # 对应界面"企业微信机器人 Key"输入框
-qywx_origin: "自定义地址"  # 对应界面"企业微信代理地址"输入框
-```
-
-配置步骤：
-
-1. 应用消息配置方式：
-   - 登录企业微信管理后台
-   - 在"应用管理"中创建/选择应用
-   - 收集配置信息：
-     1. 复制"企业ID"（在"我的企业"页面）
-     2. 复制"Secret"（在应用详情页）
-     3. 设置通知对象（@all或指定用户）
-     4. 复制"AgentId"（在应用详情页）
-     5. 如需发送图片，准备图片的media_id
-   - 将以上信息用逗号连接，填入界面"企业微信应用"输入框
-
-2. 群机器人配置方式：
-   - 在企业微信群中添加群机器人
-   - 获取webhook地址：`https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=abc123`
-   - 提取key参数填入界面"企业微信机器人 Key"输入框
-   - 如果使用自定义API地址，填入"企业微信代理地址"输入框
-
-注意事项：
-- 两种方式可以选择其一配置
-- 应用消息支持更多功能，推荐使用
-- 群机器人配置更简单，适合简单场景
-
-### 5. Telegram
-
-#### 界面配置项
-基础配置（必填）：
-- `BOT_TOKEN`: Telegram机器人Token
-- `用户 ID`: 接收消息的用户或群组ID
-
-代理配置（可选，国内用户建议配置）：
-- `代理 URL`: 代理服务器地址
-- `代理端口`: 代理服务器端口
-- `API_HOST`: 自定义API地址
-
-#### 配置文件参数
-```yaml
-# 基础配置（必填）
-tg_bot_token: "123456:ABC-DEF1234..."  # 对应界面"BOT_TOKEN"输入框
-tg_user_id: "123456789"                # 对应界面"用户 ID"输入框
-
-# 代理配置（可选）
-tg_proxy_host: "127.0.0.1"      # 对应界面"代理 URL"输入框
-tg_proxy_port: "7890"           # 对应界面"代理端口"输入框
-tg_api_host: "api.telegram.org" # 对应界面"API_HOST"输入框
-```
-
-配置步骤：
-
-1. 创建机器人并获取Token：
-   - 在Telegram中找到 @BotFather
-   - 发送 `/newbot` 创建新机器人
-   - 按提示设置机器人名称
-   - 复制获得的Bot Token填入界面"BOT_TOKEN"输入框
-
-2. 获取接收消息的ID：
-   - 个人ID获取：
-     * 找到 @userinfobot
-     * 向其发送任意消息
-     * 复制回复中的数字ID
-   - 群组ID获取：
-     * 将机器人加入群组
-     * 在群组中发送消息
-     * 通过API获取群组ID
-   - 将获得的ID填入界面"用户 ID"输入框
-
-3. 代理配置（国内用户）：
-   - 准备代理服务器信息
-   - 填写代理地址到"代理 URL"输入框
-   - 填写代理端口到"代理端口"输入框
-   - 如果使用自定义API地址，填入"API_HOST"输入框
-
-注意事项：
-- 国内用户需要配置代理才能正常使用
-- 确保机器人已经与用户或群组建立了对话
-- 测试时建议先用个人ID进行测试
-
-### 6. Ntfy
-
-#### 界面配置项
-基础配置：
-- `TOPIC`: 通知主题名称（必填）
-- `URL`: ntfy服务器地址（可选，默认 ntfy.sh）
-- `消息优先级`: 通知优先级（可选，1-5）
-
-认证配置（可选其一）：
-- `TOKEN`: 访问令牌认证
-- 用户名密码认证：
-  - `用户名称`: ntfy用户名
-  - `用户密码`: ntfy密码
-
-高级配置：
-- `用户动作`: 自定义操作按钮配置
-
-#### 配置文件参数
-```yaml
-# 基础配置
-ntfy_topic: "your-topic"         # 对应界面"TOPIC"输入框
-ntfy_url: "https://ntfy.sh"      # 对应界面"URL"输入框
-ntfy_priority: "4"               # 对应界面"消息优先级"选择框
-
-# 认证配置（选择其一）
-ntfy_token: "tk_xxxx"            # 对应界面"TOKEN"输入框
-# 或
-ntfy_username: "user"            # 对应界面"用户名称"输入框
-ntfy_password: "pass"            # 对应界面"用户密码"输入框
-
-# 高级配置
-ntfy_actions: "view,查看,https://example.com"     # 对应界面"用户动作"输入框
-```
-
-配置步骤：
-
-1. 基础配置：
-   - 确定使用的ntfy服务器：
-     * 官方服务器：使用默认URL `https://ntfy.sh`
-     * 自建服务器：填写您的服务器地址
-   - 创建主题名称并填入"TOPIC"输入框
-   - 根据需要设置消息优先级（1-5）：
-     * 1：最低优先级
-     * 2：低优先级
-     * 3：普通优先级（默认）
-     * 4：高优先级
-     * 5：紧急优先级
-
-2. 认证配置（根据服务器要求选择）：
-   - 方式1 - 访问令牌：
-     * 从ntfy服务获取访问令牌
-     * 填入"TOKEN"输入框
-   - 方式2 - 用户名密码：
-     * 填写ntfy账户的用户名和密码
-     * 分别填入"用户名称"和"用户密码"输入框
-
-3. 高级配置（可选）：
-   - 配置自定义操作按钮
-   - 在"用户动作"输入框中填写按钮配置
-
-注意事项：
-- 确保主题名称在服务器上是唯一的
-- 根据消息重要程度选择合适的优先级
-- 使用官方服务器时注意流量限制
-
-
-### 7. Webhook
-
-#### 基础配置
-```yaml
-webhook_url: "http://your-webhook-url/path"  # Webhook地址
-webhook_method: "POST"                       # 请求方法：GET或POST
-webhook_content_type: "application/json"     # 内容类型
-```
-
-#### 请求头和请求体
-```yaml
-# 自定义请求头
-webhook_headers: |
-  {
-    "Authorization": "Bearer your-token",
-    "Custom-Header": "value"
-  }
-
-# 自定义请求体模板
-webhook_body: |
-  {
-    "text": "${title}",
-    "message": "${content}",
-    "timestamp": "${timestamp}"
-  }
-```
-
-支持的变量：
-- `$title`, `{{title}}`: 通知标题
-- `$content`, `{{content}}`: 通知内容 
-- `$timestamp`, `{{timestamp}}`: 当前时间(YYYY-MM-DD HH:mm:SS)
-- `$iso_timestamp`, `{{iso_timestamp}}`: ISO格式时间
-- `$unix_timestamp`, `{{unix_timestamp}}`: UNIX时间戳
-- `$image`: 图片base64编码(当提供图片时)
-
-### 8. 邮件 (SMTP)
+### 推荐使用
+推荐指数：⭐⭐⭐
+
+<a id="smtp"></a>
+### 1. 邮件 (SMTP)
+特点：邮件推送，经典永不过时，支持多种安全设置
 
 #### 界面配置项
 基础配置（必填）：
@@ -635,7 +290,439 @@ smtp_starttls: "true"           # 对应界面"启用STARTTLS"选择框
 - 建议使用授权码而不是邮箱密码
 - 测试配置时先发送测试邮件验证
 
-### 9. Gotify
+<a id="dingtalk"></a>
+### 2. 钉钉机器人
+特点：企业级服务，稳定可靠，安全性高
+
+#### 界面配置项
+基础配置（必填其一）：
+- `Token`: 钉钉机器人的访问令牌
+  - 从webhook地址中提取`access_token=`后面的部分
+
+安全设置（推荐）：
+- `Secret`: 钉钉机器人的签名密钥
+  - 在机器人创建时选择"加签"可获得
+
+#### 配置文件参数
+```yaml
+# 基础配置（必填其一）
+dd_bot_token: "abc123..."     # 对应界面"Token"输入框
+
+# 安全设置（推荐）
+dd_bot_secret: "SEC123..."    # 对应界面"Secret"输入框
+```
+
+配置步骤：
+1. 创建机器人：
+   - 打开钉钉群 -> 智能群助手 -> 添加机器人
+   - 选择"自定义机器人"
+   - 推荐选择"加签"安全设置方式
+
+2. 获取配置信息：
+   - Token获取：
+     - 复制webhook地址（格式：`https://oapi.dingtalk.com/robot/send?access_token=abc123`）
+     - 提取`access_token=`后面的部分填入界面"Token"输入框
+
+   - Secret获取（如果选择加签）：
+     - 复制显示的加签密钥
+     - 填入界面"Secret"输入框
+
+注意事项：
+- 推荐同时配置Token和Secret
+- 使用加签可以提高安全性
+- 注意消息发送频率限制
+
+<a id="feishu"></a>
+### 3. 飞书/Lark 机器人
+
+特点：功能丰富，支持多种消息格式
+
+*先进团队，先用飞书*
+
+#### 界面配置项
+基础配置（仅文本消息）：
+- `密钥`: 飞书机器人的webhook密钥（必填）
+  - 从webhook地址中提取最后一段字符串
+
+图片消息支持（可选）：
+- `自建应用 App ID`: 用于发送图片的应用ID
+- `自建应用 Secret`: 用于发送图片的应用密钥
+
+#### 配置文件参数
+```yaml
+# 基础配置 - 仅文本消息
+fs_key: "xxxxxx"      # 对应界面"密钥"输入框
+
+# 可选配置 - 支持图片发送
+fs_appid: "cli_xxx"   # 对应界面"自建应用 App ID"输入框
+fs_appsecret: "xxx"   # 对应界面"自建应用 Secret"输入框
+```
+
+#### 配置步骤
+
+可参考[使用自定义机器人发送飞书卡片](https://open.feishu.cn/document/feishu-cards/quick-start/send-message-cards-with-custom-bot)和[上传图片](https://open.feishu.cn/document/server-docs/im-v1/image/create)了解更多。
+
+飞书和Lark的配置大同小异，但是网页端口不一致。
+
+1. 登录飞书/Lark客户端并创建一个群聊。
+   - 打开群聊的*设置*界面，
+   ![feishu_img_1](feat_notify/feishu_img_1.png)
+   - 点击*群机器人*，
+   ![feishu_img_2.png](feat_notify/feishu_img_2.png)
+   - 选择*添加机器人*>*自定义机器人*。
+   ![feishu_img_3.png](feat_notify/feishu_img_3.png)
+   - 复制webhook地址，如：`https://open.feishu.cn/open-apis/bot/v2/hook/abc123def456`
+
+
+    ::: warning
+    请妥善保存好此 webhook 地址，不要公布在 Gitlab、博客等可公开查阅的网站上，避免地址泄露后被恶意调用发送垃圾消息。你也可以增加 安全设置，以保证信息安全。
+    :::
+
+
+   - 提取最后一段`abc123def456`填入界面"Webhook地址后缀"输入框
+
+2. 图片支持配置（可选）：
+   - 访问[飞书开放平台](https://open.feishu.cn/app) 或[Lark开放平台](https://open.larksuite.com/app)
+   - 创建或选择一个应用.
+     ![feishu_img_4.png](feat_notify/feishu_img_4.png)
+   - 点击"添加应用能力"页面，赋予*机器人*能力。
+     ![feishu_img_5.png](feat_notify/feishu_img_5.png)
+   - 前往[飞书上传图片api](https://open.feishu.cn/document/server-docs/im-v1/image/create) 或[Lark上传图片api](https://open.larksuite.com/document/server-docs/im-v1/image/create)，给予应用*上传图片*权限。
+     ![feishu_img_6.png](feat_notify/feishu_img_6.png)
+   - 保存后前往应用基础页面，记录下你的appid和appsecret，并点击*创建版本*。
+     ![feishu_img_7.png](feat_notify/feishu_img_7.png)
+   - 写点东西发版
+     ![feishu_img_8.png](feat_notify/feishu_img_8.png)
+   - 在一条龙app内
+     - 复制"App ID"填入界面"自建应用 App ID"输入框
+     - 复制"App Secret"填入界面"自建应用 Secret"输入框
+
+<a id="workweixinbot"></a>
+### 4. 企业微信机器人
+
+特点：企业级服务，配置简单，支持文本和图片消息
+
+#### 企业微信机器人 - 界面配置项
+基础配置（必填）：
+- `企业微信机器人 Key`: 机器人webhook的key
+  - 从webhook地址中提取`key=`后面的部分
+
+代理配置（可选）：
+- `企业微信代理地址`: 自定义API地址
+  - 默认为 `https://qyapi.weixin.qq.com`
+  - 支持自定义代理地址
+
+#### 配置文件参数
+```yaml
+# 企业微信群聊机器人
+qywx_key: "abc123..."                              # 对应界面"企业微信机器人 Key"输入框
+qywx_origin: "https://qyapi.weixin.qq.com"       # 对应界面"企业微信代理地址"输入框
+```
+
+#### 配置步骤
+
+1. 创建机器人：
+   - 打开企业微信群聊
+   - 点击群聊名称进入群设置
+   - 选择"添加机器人"或"群机器人"选项
+   - 选择"自定义机器人"
+   - 为机器人命名（可自定义）
+
+2. 获取机器人 Key：
+   - 机器人创建后会生成webhook地址，格式为：
+     ```
+     https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=abc123xyz
+     ```
+   - 提取`key=`后面的部分（例如：`abc123xyz`）
+   - 填入界面"企业微信机器人 Key"输入框
+
+3. 代理地址配置（可选）：
+   - 默认使用官方API地址，无需修改
+   - 如果需要使用自定义代理地址，填入"企业微信代理地址"输入框
+   - 支持国内代理或自建反向代理
+
+4. 验证配置：
+   - 使用一条龙的测试功能发送测试消息
+   - 确认消息能正常显示在群聊中
+
+注意事项：
+- 支持同时发送文本和图片消息
+- 单条消息中文本优先发送，图片后发送
+- 图片大小限制为2MB以内
+- 如果发送失败，只要文本消息成功就会返回成功状态
+- 机器人需要具有发送消息权限
+
+### 进阶使用
+推荐指数：⭐⭐
+
+<a id="workweixinapp"></a>
+### 5. 企业微信应用
+特点：企业级功能，需要管理权限，支持文本和图文消息
+
+#### 企业微信应用 - 界面配置项
+基础配置（必填）：
+- `企业 ID`: 企业微信的企业ID
+- `应用 Secret`: 自建应用的Secret
+- `应用 AgentID`: 自建应用的AgentID
+- `接收者 ID`: 消息接收者，支持成员ID、部门ID或@all（可选，默认@all）
+
+#### 配置文件参数
+```yaml
+# 企业微信应用
+qywx_app_corpid: "ww123456789abcdef"      # 对应界面"企业 ID"输入框
+qywx_app_secret: "1234567890abcdefghij"  # 对应界面"应用 Secret"输入框
+qywx_app_agentid: "1000001"               # 对应界面"应用 AgentID"输入框
+qywx_app_to_user: "@all"                  # 对应界面"接收者 ID"输入框
+```
+
+#### 配置步骤
+
+1. 登录企业微信管理后台：
+   - 访问[企业微信后台](https://work.weixin.qq.com/wework_admin/loginpage_wx)
+   - 使用企业管理员账号登录
+
+2. 获取企业ID：
+   - 在"我的企业"页面
+   - 找到"企业信息"部分，复制"企业ID"
+   - 填入界面"企业 ID"输入框
+
+3. 创建或选择自建应用：
+   - 进入"应用管理" -> "自建"
+   - 点击"创建应用"或选择已有应用
+   - 获取以下信息：
+     * `Secret`: 在应用详情页的"Secret"部分，复制并填入界面"应用 Secret"输入框
+     * `AgentID`: 在应用详情页找到AgentID，复制并填入界面"应用 AgentID"输入框
+
+4. 设置消息接收者：
+   - 在应用详情页的"可见范围"部分配置接收者
+   - 在界面"接收者 ID"输入框填写：
+     * `@all`: 发送给所有成员（推荐）
+     * 其他的不做介绍，当局者清，请良心使用一条龙的推送功能
+
+5. 验证配置：
+   - 使用一条龙的测试功能发送测试消息
+   - 确认消息能正常接收
+
+注意事项：
+- 应用需要具有"消息型应用"的性质
+- Secret和AgentID需要正确对应
+- 确保应用在"可见范围"中包含目标接收者
+- 支持同时发送文本消息和图文消息（带图片）
+- 图文消息发送失败时会自动回退到文本消息
+
+<a id="onebot"></a>
+### 2. OneBot
+特点：功能丰富，适合有计算机基础且想把图文消息推送到QQ群
+
+#### 界面配置项
+服务配置：
+- `请求地址`: go-cqhttp服务地址（必填，默认`http://127.0.0.1:5700`）
+- `Token`: API访问令牌（可选，取决于go-cqhttp配置）
+
+消息接收配置（至少填写一项）：
+- `QQ 号`: 接收私聊消息的QQ号
+- `群号`: 接收群聊消息的群号
+
+#### 配置文件参数
+```yaml
+# 服务配置
+onebot_url: "http://127.0.0.1:5700"  # 对应界面"请求地址"输入框
+onebot_token: "your-access-token"     # 对应界面"Token"输入框
+
+# 消息接收配置（至少配置一项）
+onebot_user: "12345678"   # 对应界面"QQ 号"输入框
+onebot_group: "87654321"  # 对应界面"群号"输入框
+```
+
+配置步骤：
+1. 环境准备：
+   - 确保go-cqhttp已正确安装和配置
+   - 确保服务正常运行
+
+2. 基础配置：
+   - `请求地址`：
+     - 本地部署填写：`http://127.0.0.1:5700`
+     - 远程部署填写实际服务器地址
+   - `Token`：
+     - 如果go-cqhttp配置了访问令牌，需要填写
+     - 否则可以留空
+
+3. 消息接收配置（至少选择一项）：
+   - 私聊消息：填写接收消息的QQ号
+   - 群聊消息：填写接收消息的群号
+   - 可以同时配置，消息会同时发送到私聊和群聊
+
+4. 验证配置：
+   - 使用一条龙的测试功能发送测试消息
+   - 确认消息能正常接收
+
+<a id="webhook"></a>
+### 3. 通用Webhook
+
+#### 基础配置
+```yaml
+webhook_url: "http://your-webhook-url/path"  # Webhook地址
+webhook_method: "POST"                       # 请求方法：GET或POST
+webhook_content_type: "application/json"     # 内容类型
+```
+
+#### 请求头和请求体
+```yaml
+# 自定义请求头
+webhook_headers: |
+  {
+    "Authorization": "Bearer your-token",
+    "Custom-Header": "value"
+  }
+
+# 自定义请求体模板
+webhook_body: |
+  {
+    "text": "${title}",
+    "message": "${content}",
+    "timestamp": "${timestamp}"
+  }
+```
+
+支持的变量：
+- `$title`, `{{title}}`: 通知标题
+- `$content`, `{{content}}`: 通知内容
+- `$timestamp`, `{{timestamp}}`: 当前时间(YYYY-MM-DD HH:mm:SS)
+- `$iso_timestamp`, `{{iso_timestamp}}`: ISO格式时间
+- `$unix_timestamp`, `{{unix_timestamp}}`: UNIX时间戳
+- `$image`: 图片base64编码(当提供图片时)
+
+### 特殊需求
+推荐指数：⭐
+
+<a id="discord"></a>
+### 1. Discord
+
+暂无详细说明。排查就到这里为止，剩下的因为连我都没有用过。
+
+<a id="telegram"></a>
+### 2. Telegram
+
+#### 界面配置项
+基础配置（必填）：
+- `BOT_TOKEN`: Telegram机器人Token
+- `用户 ID`: 接收消息的用户或群组ID
+
+代理配置（可选，国内用户建议配置）：
+- `代理 URL`: 代理服务器地址
+- `代理端口`: 代理服务器端口
+- `API_HOST`: 自定义API地址
+
+#### 配置文件参数
+```yaml
+# 基础配置（必填）
+tg_bot_token: "123456:ABC-DEF1234..."  # 对应界面"BOT_TOKEN"输入框
+tg_user_id: "123456789"                # 对应界面"用户 ID"输入框
+
+# 代理配置（可选）
+tg_proxy_host: "127.0.0.1"      # 对应界面"代理 URL"输入框
+tg_proxy_port: "7890"           # 对应界面"代理端口"输入框
+tg_api_host: "api.telegram.org" # 对应界面"API_HOST"输入框
+```
+
+配置步骤：
+
+1. 创建机器人并获取Token：
+   - 在Telegram中找到 @BotFather
+   - 发送 `/newbot` 创建新机器人
+   - 按提示设置机器人名称
+   - 复制获得的Bot Token填入界面"BOT_TOKEN"输入框
+
+2. 获取接收消息的ID：
+   - 个人ID获取：
+     * 找到 @userinfobot
+     * 向其发送任意消息
+     * 复制回复中的数字ID
+   - 群组ID获取：
+     * 将机器人加入群组
+     * 在群组中发送消息
+     * 通过API获取群组ID
+   - 将获得的ID填入界面"用户 ID"输入框
+
+3. 代理配置（国内用户）：
+   - 准备代理服务器信息
+   - 填写代理地址到"代理 URL"输入框
+   - 填写代理端口到"代理端口"输入框
+   - 如果使用自定义API地址，填入"API_HOST"输入框
+
+注意事项：
+- 国内用户需要配置代理才能正常使用
+- 确保机器人已经与用户或群组建立了对话
+- 测试时建议先用个人ID进行测试
+
+<a id="ntfy"></a>
+### 3. Ntfy
+
+#### 界面配置项
+基础配置：
+- `TOPIC`: 通知主题名称（必填）
+- `URL`: ntfy服务器地址（可选，默认 ntfy.sh）
+- `消息优先级`: 通知优先级（可选，1-5）
+
+认证配置（可选其一）：
+- `TOKEN`: 访问令牌认证
+- 用户名密码认证：
+  - `用户名称`: ntfy用户名
+  - `用户密码`: ntfy密码
+
+高级配置：
+- `用户动作`: 自定义操作按钮配置
+
+#### 配置文件参数
+```yaml
+# 基础配置
+ntfy_topic: "your-topic"         # 对应界面"TOPIC"输入框
+ntfy_url: "https://ntfy.sh"      # 对应界面"URL"输入框
+ntfy_priority: "4"               # 对应界面"消息优先级"选择框
+
+# 认证配置（选择其一）
+ntfy_token: "tk_xxxx"            # 对应界面"TOKEN"输入框
+# 或
+ntfy_username: "user"            # 对应界面"用户名称"输入框
+ntfy_password: "pass"            # 对应界面"用户密码"输入框
+
+# 高级配置
+ntfy_actions: "view,查看,https://example.com"     # 对应界面"用户动作"输入框
+```
+
+配置步骤：
+
+1. 基础配置：
+   - 确定使用的ntfy服务器：
+     * 官方服务器：使用默认URL `https://ntfy.sh`
+     * 自建服务器：填写您的服务器地址
+   - 创建主题名称并填入"TOPIC"输入框
+   - 根据需要设置消息优先级（1-5）：
+     * 1：最低优先级
+     * 2：低优先级
+     * 3：普通优先级（默认）
+     * 4：高优先级
+     * 5：紧急优先级
+
+2. 认证配置（根据服务器要求选择）：
+   - 方式1 - 访问令牌：
+     * 从ntfy服务获取访问令牌
+     * 填入"TOKEN"输入框
+   - 方式2 - 用户名密码：
+     * 填写ntfy账户的用户名和密码
+     * 分别填入"用户名称"和"用户密码"输入框
+
+3. 高级配置（可选）：
+   - 配置自定义操作按钮
+   - 在"用户动作"输入框中填写按钮配置
+
+注意事项：
+- 确保主题名称在服务器上是唯一的
+- 根据消息重要程度选择合适的优先级
+- 使用官方服务器时注意流量限制
+
+<a id="gotify"></a>
+### 4. Gotify
 
 #### 基础配置
 ```yaml
@@ -656,10 +743,10 @@ gotify_priority: 5  # 消息优先级(1-10)，默认5
    - 4-7: 中等优先级
    - 8-10: 高优先级
 
+<a id="aibotk"></a>
+### 5. 智能微秘书
 
-### 10. 智能微秘书
-
-该平台仅接受邀请注册
+特点：<font color="red">该平台仅接受邀请注册</font>
 
 #### 基础配置
 ```yaml
@@ -668,7 +755,8 @@ aibotk_type: "room"           # 发送类型：room(群聊)或contact(私聊)
 aibotk_name: "接收者名称"      # 接收群聊或联系人名称
 ```
 
-### 11. WxPusher
+<a id="wxpusher"></a>
+### 6. WxPusher
 
 #### 基础配置
 ```yaml
