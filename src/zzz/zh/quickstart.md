@@ -19,40 +19,33 @@ title: 绝区零 一条龙 快速开始
 
 <details>
 
-基于绝区零[官方公告](https://zzz.mihoyo.com/news/124528?category=279)，公测要求支持配置最低为：
+基于绝区零[官方公告](https://zzz.mihoyo.com/news/124528?category=279)，正式开服的机型推荐配置为：
 
-```bash
-PC端：第七代英特尔酷睿i5，8G内存，英伟达GeForce GTX970及以上
+```
+PC端：第十代英特尔酷睿i5，8G内存，英伟达GeForce GTX1660及以上
 ```
 
-且本脚本需要额外的算力以支持OCR/推理，因此本项目运行基本配置为：
+AMD请参考各家天梯图等效换算。
 
-- 台式机
-  - 第八代英特尔酷睿i5及以上
-  - 8G内存及以上
-  - 英伟达GeForce GTX1060及以上
-- 笔记本
-  - 第十二代英特尔酷睿i5及以上
-  - 8G内存及以上
-  - 英伟达GeForce GTX1060及以上
+且本脚本需要额外的算力以支持OCR/推理。
 
- E3等更低的配置 算力不够/缺少指令集 无法保证逻辑流畅运行，请优先考虑升级硬件。 AMD请参考各家天梯图等效换算。
+E3等更低的配置 算力不够/缺少指令集 无法保证逻辑流畅运行，请优先考虑升级硬件。
 
-有社区案例表明可以在插入VR眼镜后的 运行windows系统的Steam Deck 上运行。
+有社区案例表明可以在插入VR眼镜后的 [运行windows系统的Steam Deck](https://pd.qq.com/s/1figjk5c9?b=2) 上运行。
 
-但是请注意，Steam Deck 并非完美支持，可能存在一些兼容性问题。
+~~但是请注意，Steam Deck 并非完美支持，可能存在一些兼容性问题。~~
 
-如果你发现了新的兼容硬件不在上述清单中，[欢迎分享](https://pd.qq.com/g/onedrag00n?subc=716388285)
+如果你发现了新的兼容硬件不在上述清单中，欢迎前往[官方频道](https://pd.qq.com/g/onedrag00n?subc=716388285)分享。
 </details>
 
-### 1.2.操作系统
+### 1.2.系统
 
-- 打开你的windows update，确认升级到最新版本。
-- 运行较新的Windows 10/11 64位系统。
+使用较新的Windows 10 64位及以上操作系统。
 
 ### 1.3.网络
 
-> 你可以先跳过这个步骤，运行失败的时候，再通过下方详情中链接确认连通性。
+运行失败的时候，可通过下方详情中链接确认连通性。
+> 如果下载最新的 `Full-Environment` 超完整包，其实可以离线安装避免网络环境导致的安装失败。
 
 <details>
 
@@ -68,36 +61,29 @@ PC端：第七代英特尔酷睿i5，8G内存，英伟达GeForce GTX970及以上
 
 </details>
 
-## 2.下载
+## 2.下载安装/运行
 
 <a id="download-package"></a>
+### **使用安装器安装/运行（推荐）**
+
+::: tip
 
 你可以在以下位置下载到一条龙最新的安装包：
-- [GitHub 的 Release 页面](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases)
+- [GitHub 的 Release 页面](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases)（对网络有一定的特殊要求）
 - [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&source=zzzgh-release) 需要 Mirror CDK（不免费但是可以支持开发者的开发）
-- 我们的[官方频道](https://pd.qq.com/g/onedrag00n)
-- 或前往[频道关联群聊](https://pd.qq.com/g/onedrag00n)
+- [官方频道](https://pd.qq.com/g/onedrag00n)获取安装包（网盘下载）
 
-> 推荐下载带有 `-Full-Environment` 的最新超完整包来避免网络环境导致的安装失败。
->
-> Mirror源默认下载的就是这个包。
->
-> ![download_zip](quickstart/download_zip.gif)
+:::
 
-<details>
-源码下载，仅适用高级玩家。
+- 下载：推荐下载最新的 `-Full-Environment` 的超完整包来避免网络环境导致的安装失败。
 
-```bash
-git clone https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon.git
+> 请使用最新的安装包，此处教程仅以 `2.1.1-beta1` 版本的 `Full-Environment` 的完整包做示范。
+
+![download_zip](quickstart/download_zip.gif)
+
+- 解压：在某个**固态磁盘**的根目录创建一个全英文的空文件夹，并解压缩安装包到刚才创建的路径，例如：
+
 ```
-
-</details>
-
-## 3.安装
-
-在某个**固态磁盘**的根目录创建一个全英文的空文件夹，然后再开始我们的安装过程，例如：
-
-```bash
 D:\ZZZ-OD
 ```
 
@@ -117,27 +103,17 @@ D:\ZZZ-OD
 还有一些其他的奇怪情况，无法穷举，请务必按照上述要求创建路径。
 </details>
 
-### **使用安装器安装（推荐）**
-
-> 请使用最新的安装包，此处教程仅以 `2.1.1-beta1` 版本的 `Full-Environment` 的完整包做示范。
-
-- 解压缩安装包到刚才创建的路径。
-
   ![folder_overview](./quickstart/folder_overview.png)
 
-- 运行安装器。
-
-1. **以管理员身份运行安装器**，等待安装器界面打开。
+- 准备安装：**以管理员身份运行安装器**，等待安装器界面打开。
 
    ![open_installer](quickstart/open_installer.gif)
 
-2. 点击浏览选择路径，默认选择当前解压的文件夹。
-
-3. 选择合适的下载源，`Full-Environment` 包默认已经包含了需要下载的工具，仅需要下载代码。
-
-4. 默认预设了三个配置好的源，如果开加速器/代理软件，请选择海外源并参考下文[代理说明](#代理说明)进行配置。
-
-5. 点击一键安装或自定义安装，按步骤点击下一步，等待配置完成。
+- 开始安装：
+  - 点击浏览选择路径，默认选择当前解压的文件夹。
+  - 选择合适的下载源，`Full-Environment` 包默认已经包含了需要下载的工具，仅需要下载代码。
+  - 默认预设了三个配置好的源，如果开加速器/代理软件，请选择海外源并参考下文[代理说明](#代理说明)进行配置。
+  - 点击一键安装或自定义安装，按步骤点击下一步，等待配置完成。
 
    ![use_installer](quickstart/use_installer.gif)
 
@@ -151,14 +127,14 @@ UV和Python环境安装这一步文件较多较大，可能需要一定时间下
 
 `.install` 文件夹内的三个压缩包，在安装成功后可以删除。
 
-- 启动一条龙。
+- 启动！
 
 安装完成后使用 `OneDragon-Launcher.exe` 即可启动。
 > 启动失败请参考：[常见问题](faq.md) 或 [热门问题文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)
 > 安装完成后，请参照[必要设置](./docs/config.md)进行游戏和脚本的基础配置。
 > 高级启动参数请参考[启动参数](#高级启动参数)。
 
-### **高级手动安装（可选）**
+### **使用源码运行（可选）**
 
 <details>
 
@@ -166,16 +142,17 @@ UV和Python环境安装这一步文件较多较大，可能需要一定时间下
 
 ```bash
 git clone https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon.git
+sudo powershell
 cd ZenlessZoneZero-OneDragon
-pip install -r requirements-prod.txt
-pip install -r requirements-gamepad.txt
-# 启动游戏
-./OneDragon-Launcher.exe
+uv sync
+uv activate
+$env:PYTHONPATH=".\src"
+uv run .\src\zzz_od\gui\app.py
 ```
 
 </details>
 
-### **代理说明**
+## 3. 代理说明
 
 - Github 免费代理，可以加速所有 Github 下载相关步骤（代码同步，环境下载，Python下载）可以在网络上找到很多免费提供加速的服务商。
 
@@ -193,13 +170,29 @@ pip install -r requirements-gamepad.txt
   > https://gh.dpik.top/
 :::
 
+<a id="update-package"></a>
 ## 4.脚本如何更新
 
-目前版本一条龙默认启用**自动更新**功能，在你启动 `OneDragon-Launcher.exe` 时会尝试一次自动更新。
-启动器右上角会显示当前代码版本的哈希值。
-可在启动器左下角点击 `代码同步` 功能进行代码的手动更新。
-**一条龙是基于图像识别，所以及时更新识别模型非常重要**。
-可以通过 `设置-资源下载` 进行模型的选择和更新，模型后面的数字为日期，一般来说越新越好。
+目前版本一条龙默认启用**自动更新**功能，启动器右上角会显示当前代码版本的哈希值。
+
+一条龙包含三个主要部分：
+
+1. 安装器
+   - 用于安装一条龙
+   - 安装成功后可以删除
+
+2. 运行代码
+   - 一条龙的核心部分
+   - 会频繁更新
+   - 更新方式：
+     - <font color="red">每次启动脚本时自动尝试更新</font>
+     - <font color="red">点击左下角 `代码同步` 可手动更新</font>
+
+3. 模型文件
+   - **一条龙基于图像识别，及时更新识别模型非常重要**
+   - 更新方式：
+     - 通过 `设置-资源下载` 进行模型选择和更新
+     - 模型后的数字表示日期，通常越新越好
 
 ## 5.高级启动参数
 
