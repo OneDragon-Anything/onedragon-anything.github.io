@@ -136,19 +136,57 @@ UV和Python环境安装这一步文件较多较大，可能需要一定时间下
 
 ### **使用源码运行（可选）**
 
+高级玩家可以查看详情使用源码运行 ~~我觉得没必要~~
+
 <details>
 
-高级玩家废话少说。
+1. 安装 uv（如果你有 uv 可以跳过此步骤）
 
-```bash
-git clone https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon.git
-sudo powershell
-cd ZenlessZoneZero-OneDragon
-uv sync
-uv activate
-$env:PYTHONPATH=".\src"
-uv run .\src\zzz_od\gui\app.py
-```
+   ```powershell
+   powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+   ```
+
+2. 创建并进入指定目录（以 C:\ 为示例）
+
+   ```powershell
+   $targetDir = "C:\"; if (!(Test-Path $targetDir)) { New-Item -ItemType Directory -Path $targetDir -Force }; cd $targetDir
+   ```
+
+3. 在该目录下克隆仓库
+
+   ```powershell
+   git clone https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon.git
+   ```
+
+4. 进入项目文件夹
+
+   ```powershell
+   cd ZenlessZoneZero-OneDragon
+   ```
+
+5. 同步环境（uv 会自动处理 Python 版本和依赖库）
+
+   ```powershell
+   uv sync
+   ```
+
+6. 设置临时路径变量
+
+   ```powershell
+   $env:PYTHONPATH=".\src"
+   ```
+
+7. 启动程序
+
+   ```powershell
+   uv run python .\src\zzz_od\gui\app.py
+   ```
+
+::: tip
+
+如果第一步运行后提示找不到 uv，请重启 PowerShell 窗口，然后从第 2 步重新开始。
+
+:::
 
 </details>
 
