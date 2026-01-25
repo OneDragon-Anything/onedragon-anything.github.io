@@ -11,7 +11,7 @@
 确保你的机器上安装了 [Node.js v20.17.0](https://nodejs.org/dist/v20.17.0/node-v20.17.0-win-x64.zip)，然后运行以下命令安装并激活 pnpm：
 
 ```powershell
-wget install OpenJS.NodeJS.LTS; corepack enable; corepack prepare pnpm@latest --activate
+winget install OpenJS.NodeJS.LTS; corepack enable; corepack prepare pnpm@latest --activate
 ```
 
 > 执行完后**必须关闭并重新打开 PowerShell 窗口**
