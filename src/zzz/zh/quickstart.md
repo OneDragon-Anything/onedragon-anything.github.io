@@ -21,7 +21,7 @@ title: 绝区零 一条龙 快速开始
 
 基于绝区零[官方公告](https://zzz.mihoyo.com/news/124528?category=279)，正式开服的机型推荐配置为：
 
-```
+```text
 PC端：第十代英特尔酷睿i5，8G内存，英伟达GeForce GTX1660及以上
 ```
 
@@ -152,6 +152,7 @@ uv run .\src\zzz_od\gui\app.py
 
 </details>
 
+<a id="代理说明"></a>
 ## 3. 代理说明
 
 - Github 免费代理，可以加速所有 Github 下载相关步骤（代码同步，环境下载，Python下载）可以在网络上找到很多免费提供加速的服务商。
