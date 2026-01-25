@@ -52,7 +52,7 @@ pnpm docs:dev
 pnpm docs:build
 ```
 
-静态文件将生成到 `.vitepress/dist/` 目录。
+静态文件将生成到 `src/.vuepress/dist/` 目录。
 
 ### 5️⃣ 预览构建结果
 
