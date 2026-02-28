@@ -19,63 +19,26 @@ export default hopeTheme({
 
   docsDir: "src",
 
-  locales: {
-    "/en/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
-
-      displayFooter: true,
-
-      // metaLocales: {
-      //   editLink: "Edit this page on GitHub",
-      // },
-    },
-
-    "/zzz/": {
-      logo: "/logo_zzz.ico",
-
+  locales: (() => {
+    const zhShared = {
       navbar: zhNavbar,
       sidebar: zhSidebar,
-
       footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
       displayFooter: true,
-    },
+    };
 
-    "/sr/": {
-      logo: "/logo_sr.ico",
+    return {
+      "/en/": {
+        ...zhShared,
+        navbar: enNavbar,
+        sidebar: enSidebar,
+      },
 
-      navbar: zhNavbar,
-      sidebar: zhSidebar,
-
-      footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
-      displayFooter: true,
-    },
-
-    /**
-     * Chinese locale config
-     */
-    "/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
-
-      displayFooter: true,
-
-      // page meta
-      // metaLocales: {
-      //   editLink: "在 GitHub 上编辑此页",
-      // },
-    },
-  },
+      "/zzz/": { ...zhShared, logo: "/logo_zzz.ico" },
+      "/sr/": { ...zhShared, logo: "/logo_sr.ico" },
+      "/": { ...zhShared },
+    };
+  })(),
 
   encrypt: {
     config: {
