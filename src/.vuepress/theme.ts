@@ -13,7 +13,7 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/logo.svg",
 
   // repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -34,6 +34,26 @@ export default hopeTheme({
       // metaLocales: {
       //   editLink: "Edit this page on GitHub",
       // },
+    },
+
+    "/zzz/": {
+      logo: "/logo_zzz.ico",
+
+      navbar: zhNavbar,
+      sidebar: zhSidebar,
+
+      footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
+      displayFooter: true,
+    },
+
+    "/sr/": {
+      logo: "/logo_sr.ico",
+
+      navbar: zhNavbar,
+      sidebar: zhSidebar,
+
+      footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
+      displayFooter: true,
     },
 
     /**

@@ -11,6 +11,14 @@ export default defineUserConfig({
       lang: "zh-CN",
       title: "一条龙小助手",
     },
+    "/zzz/": {
+      lang: "zh-CN",
+      title: "一条龙小助手",
+    },
+    "/sr/": {
+      lang: "zh-CN",
+      title: "一条龙小助手",
+    },
   },
 
   theme,
