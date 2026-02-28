@@ -53,7 +53,7 @@ export const zhNavbar = navbar([
     prefix: "/zzz/zh",
     children: [
       {
-        text: "简介",
+        text: "项目简介",
         icon: "home",
         link: "home"
       },
@@ -63,33 +63,34 @@ export const zhNavbar = navbar([
         link: "quickstart",
       },
       {
+        text: "必要设置",
+        icon: "triangle-exclamation",
+        link: "config",
+      },
+      {
         text: "常见问题",
         icon: "question",
         link: "faq",
       },
       {
         text: "功能说明",
-        prefix: "docs",
+        icon: "lightbulb",
         children: [
-          {
-            text: "⚠︎必要设置-必读⚠︎",
-            link: "config"
-          },
           {
             text: "功能-战斗助手",
             link: "feat_battle_assistant"
           },
           {
             text: "功能-一条龙",
-            link: "feat_one_dragon"
+            link: "feat_one_dragon/quickstart"
           },
           {
             text: "功能-零号空洞",
-            link: "feat_hollow_zero"
+            link: "feat_one_dragon/hollow_zero"
           },
           {
             text: "功能-锄大地",
-            link: "feat_world_patrol"
+            link: "feat_one_dragon/world_patrol"
           },
           {
             text: "功能-游戏助手",
@@ -107,6 +108,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "自动战斗教程",
+        icon: "book",
         prefix: "auto_battle_guide",
         children: [
           {
@@ -129,11 +131,16 @@ export const zhNavbar = navbar([
       },
       {
         text: "贡献&开发",
+        icon: "code-branch",
         prefix: "dev",
         children: [
           {
             text: "说明",
             link: "contribution",
+          },
+          {
+            text: "路线图",
+            link: "roadmap",
           }
         ]
       }

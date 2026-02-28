@@ -186,6 +186,10 @@ export const zhSidebar = sidebar({
           prefix: "character_special/",
           children: [
             {
+              text: "总览",
+              link: "intro",
+            },
+            {
               text: "莱特",
               link: "lighter",
             },
@@ -194,6 +198,21 @@ export const zhSidebar = sidebar({
         {
           text: "冷知识",
           link: "other/battle_knowledge",
+        }
+      ]
+    },
+    {
+      text: "贡献&开发",
+      icon: "code-branch",
+      prefix: "dev",
+      children: [
+        {
+          text: "说明",
+          link: "contribution",
+        },
+        {
+          text: "路线图",
+          link: "roadmap",
         }
       ]
     }
