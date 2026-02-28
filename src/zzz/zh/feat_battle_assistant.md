@@ -115,6 +115,6 @@ title: 功能-战斗助手
 战斗助手底层都是指令的配置，可以参考以下文档编写适合自己配队的指令。
 如果有自己修改了觉得好用的配置，欢迎提交PR。
 
-- [朱鸢示例教程(新)(未完成)](../auto_battle_guide/zhu_yuan/zhu_yuan_01.md)
-- [自定义指令基础(新)(未完成)](../auto_battle_guide/basic/basic_00_yaml.md)
-- [自定义指令介绍(旧)](./feat_custom_op.md)
+- [朱鸢示例教程(新)(未完成)](./auto_battle_guide/zhu_yuan/zhu_yuan_01.md)
+- [自定义指令基础(新)(未完成)](./auto_battle_guide/basic/basic_00_yaml.md)
+- [自定义指令介绍(旧)](./auto_battle_guide/feat_custom_op.md)

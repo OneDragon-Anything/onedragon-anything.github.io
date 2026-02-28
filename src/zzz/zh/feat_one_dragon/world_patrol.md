@@ -1,25 +1,27 @@
 ---
 lang: zh-CN
-title: 功能-锄大地
+title: 锄大地
 date: 2025-08-25
 ---
 
 :::important
 - 锄大地功能意见或问题，请前往[issue](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/issues)或[PR](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/pulls)
-- 使用此功能前，建议勘域编队中要有一名合适的行走位
+- 首次使用前，建议运行一次位于 `游戏助手` 内的 `鼠标校准`
 :::
 
 ## 快速开始-锄大地
 
-用于自动打绝区零大世界里的野怪，获得丁尼、代理人经验和音擎经验材料。
+用于自动打绝区零大世界里的野怪，获得丁尼、代理人经验和音擎经验材料
 
-锄大地主体由[自动战斗](./feat_battle_assistant.md)和[路线名单](#路线列表)两部分组成，可<font color="red">使用已有配置</font>或自行创建配置
+使用此功能前，建议勘域编队中要有一名合适的行走位
+
+锄大地主体由[自动战斗](../feat_battle_assistant.md)和[路线名单](#路线列表)两部分组成，可<font color="red">使用已有配置</font>或自行创建配置
 
 **支持区域**：莱姆尼安空洞
 
 **相关帖子**：[锄大地使用方法](https://pd.qq.com/s/cofn3sf28?b=2)
 
-![锄大地](feat_world_patrol/feat_world_patrol.png)
+![锄大地](world_patrol/feat_world_patrol.png)
 
 ## 锄大地录制
 

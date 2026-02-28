@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 绝区零 一条龙
+title: 项目简介
 ---
 
 ![应用展示](/images/zzz/zzz_app.png)

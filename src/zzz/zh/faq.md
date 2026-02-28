@@ -9,10 +9,6 @@ title: 常见问题
 
 [反馈]:https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/issues
 
-## 0.遇事不决！先看文档！
-
-大部分常见问题会记录在[问题排查文档][文档]，你可以通过文档内的大纲来快速定位问题！
-
 ::: important 重要
 # [👉👉👉👉问题排查文档👈👈👈👈][文档]
 :::
