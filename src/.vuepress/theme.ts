@@ -20,7 +20,7 @@ export default hopeTheme({
   docsDir: "src",
 
   locales: (() => {
-    const zhShared = {
+    const sharedLocaleConfig = {
       navbar: zhNavbar,
       sidebar: zhSidebar,
       footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
@@ -29,14 +29,14 @@ export default hopeTheme({
 
     return {
       "/en/": {
-        ...zhShared,
+        ...sharedLocaleConfig,
         navbar: enNavbar,
         sidebar: enSidebar,
       },
 
-      "/zzz/": { ...zhShared, logo: "/logo_zzz.ico" },
-      "/sr/": { ...zhShared, logo: "/logo_sr.ico" },
-      "/": { ...zhShared },
+      "/zzz/": { ...sharedLocaleConfig, logo: "/logo_zzz.ico" },
+      "/sr/": { ...sharedLocaleConfig, logo: "/logo_sr.ico" },
+      "/": { ...sharedLocaleConfig },
     };
   })(),
 
