@@ -72,7 +72,7 @@ title: 必要设置
 |  ----  | ----  |
 | [战斗助手](./feat_battle_assistant.md) | 自动战斗/闪避 和战斗脚本相关信息查看 |
 | [快速开始](./feat_one_dragon/quickstart.md)  | 主要功能，一键完成设定的任务并发送通知 |
-| [零号空洞](./feat_one_dragon/hollow_zero.md) | 自动完成零号空洞任务（含枯萝之都、迷失之地） |
+| [零号空洞](./feat_one_dragon/hollow_zero.md) | 自动完成零号空洞任务（含枯萎之都、迷失之地） |
 | [锄大地](./feat_one_dragon/world_patrol.md) | 自动锄大地（打野怪），获得丁尼、代理人经验和音擎经验材料 |
 | [游戏助手](./feat_game_assistant.md) | 委托助手/自动对话/拿命验收设置 |
 | [设置与其他设置详解](./feat_gamepad.md) | 通知系统 手柄支持 其他设置 小彩蛋 |

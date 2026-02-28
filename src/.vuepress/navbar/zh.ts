@@ -126,6 +126,10 @@ export const zhNavbar = navbar([
           {
             text: "角色连招示例",
             link: "character_special/intro",
+          },
+          {
+            text: "冷知识",
+            link: "other/battle_knowledge",
           }
         ]
       },
