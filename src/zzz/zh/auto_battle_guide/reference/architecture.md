@@ -35,7 +35,7 @@ title: 架构解析 - 全配队通用
 
 ### 状态引用树
 
-```
+```text
 【全配队通用】
      │
      ├─ scene: [闪避事件] (priority: 99)
@@ -122,7 +122,7 @@ handlers:
 三个轮换模板各司其职：
 
 - **轮换-救命-全角色**：低血量触发，切人开大保命
-- **轮换-合轴-全角色**：连招结束后触发（由 `自定义-合轴时间` 状态），判断是否补增益换人
+- **轮换-合轴-全角色**：连招结束后触发（由 `自定义-合轴时间` 状态），判断是否需要补增益并换人
 - **轮换-紧急-全角色**：每次主循环前检查，处理突发的换人需求
 
 ---
@@ -218,12 +218,12 @@ handlers:
     operations:
       - operation_template: "双反-上一个"
       - op_name: "设置状态"
-        data: [ "自定义-黄光切人" ]
+        state: "自定义-黄光切人"
   - states: "[后台-1-击破]"
     operations:
       - operation_template: "双反-下一个"
       - op_name: "设置状态"
-        data: [ "自定义-黄光切人" ]
+        state: "自定义-黄光切人"
 ```
 
 </details>
@@ -307,7 +307,7 @@ scenes:
     handlers:
       - states: "[按键可用-快速支援]"
         operations:
-          - op_name: "按键-切换角色-下一个"
+          - op_name: "按键-快速支援"
           - op_name: "设置状态"
             state: "自定义-快速支援换人"
 ```
@@ -325,9 +325,9 @@ handlers:
       - states: "[自定义-快速支援换人]"
         operations:
           - op_name: "等待秒数"
-            data: [ "0.5" ]
+            seconds: 0.5
           - op_name: "清除状态"
-            data: [ "自定义-快速支援换人" ]
+            state: "自定义-快速支援换人"
           - op_name: "设置状态"
             state: "自定义-临时站场"
 ```
@@ -369,7 +369,7 @@ handlers:
       - states: "[自定义-连携换人]"
         operations:
           - op_name: "等待秒数"
-            data: [ "1.5" ]
+            seconds: 1.5
 ```
 
 </details>
