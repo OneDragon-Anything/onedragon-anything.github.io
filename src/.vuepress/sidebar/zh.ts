@@ -174,6 +174,10 @@ export const zhSidebar = sidebar({
               text: "架构解析-全配队通用",
               link: "architecture",
             },
+            {
+              text: "建议与调试",
+              link: "tips_and_debug",
+            },
           ]
         },
         {
@@ -194,12 +198,8 @@ export const zhSidebar = sidebar({
               link: "zhu_yuan_03",
             },
             {
-              text: "角色连招示例-总览",
+              text: "角色连招示例",
               link: "intro",
-            },
-            {
-              text: "角色连招示例-莱特",
-              link: "lighter",
             },
           ]
         },
