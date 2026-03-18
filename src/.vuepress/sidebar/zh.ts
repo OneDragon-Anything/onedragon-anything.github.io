@@ -119,28 +119,28 @@ export const zhSidebar = sidebar({
       prefix: "auto_battle_guide",
       children: [
         {
-          text: "基础",
+          text: "基础教程",
           collapsible: true,
           prefix: "basic/",
           children: [
             {
-              text: "00-Yaml格式",
-              link: "basic_00_yaml",
+              text: "00-自动战斗简介",
+              link: "basic_00_intro",
             },
             {
-              text: "01-自动战斗简介",
-              link: "basic_01_intro",
+              text: "01-YAML格式",
+              link: "basic_01_yaml",
             },
             {
               text: "02-场景",
               link: "basic_02_scenes",
             },
             {
-              text: "03-场景下的触发器",
+              text: "03-触发条件",
               link: "basic_03_triggers",
             },
             {
-              text: "04-场景下的处理方法",
+              text: "04-处理方法",
               link: "basic_04_handlers",
             },
             {
@@ -148,55 +148,63 @@ export const zhSidebar = sidebar({
               link: "basic_05_states",
             },
             {
-              text: "06-操作指令数组",
+              text: "06-操作指令",
               link: "basic_06_operations",
             },
             {
-              text: "90-状态枚举",
-              link: "basic_90_states_enum",
+              text: "07-模板系统",
+              link: "basic_07_templates",
             },
           ]
         },
         {
-          text: "功能-自定义指令",
-          link: "feat_custom_op"
-        },
-        {
-          text: "朱鸢示例",
+          text: "参考手册",
           collapsible: true,
-          prefix: "zhu_yuan/",
+          prefix: "reference/",
           children: [
             {
-              text: "01-确定站场角色",
+              text: "状态枚举",
+              link: "states_enum",
+            },
+            {
+              text: "内置战斗配置",
+              link: "battle_configs",
+            },
+            {
+              text: "架构解析-全配队通用",
+              link: "architecture",
+            },
+          ]
+        },
+        {
+          text: "实战教程",
+          collapsible: true,
+          prefix: "tutorial/",
+          children: [
+            {
+              text: "01-确定站场角色-朱鸢",
               link: "zhu_yuan_01",
             },
             {
-              text: "02-角色连招",
+              text: "02-角色连招-朱鸢",
               link: "zhu_yuan_02",
             },
             {
-              text: "03-连携与快速支援",
+              text: "03-连携与快速支援-朱鸢",
               link: "zhu_yuan_03",
             },
-          ]
-        },
-        {
-          text: "角色连招示例",
-          collapsible: true,
-          prefix: "character_special/",
-          children: [
             {
-              text: "总览",
+              text: "角色连招示例-总览",
               link: "intro",
             },
             {
-              text: "莱特",
+              text: "角色连招示例-莱特",
               link: "lighter",
             },
           ]
         },
         {
-          text: "冷知识",
+          text: "冷门知识",
           link: "other/battle_knowledge",
         }
       ]

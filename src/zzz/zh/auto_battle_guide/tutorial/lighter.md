@@ -13,7 +13,7 @@ scenes:
     interval: 0.02
     handlers:
       - states: "[前台-莱特]"
-        sub_states:
+        sub_handlers:
           - states: "[莱特-士气]{80, 100} & ![自定义-莱特-士气, 0, 999]{1}"
             operations:
               - op_name: "设置状态"

@@ -112,23 +112,19 @@ export const zhNavbar = navbar([
         prefix: "auto_battle_guide",
         children: [
           {
-            text: "基础",
-            link: "basic/basic_00_yaml",
+            text: "基础教程",
+            link: "basic/basic_00_intro",
           },
           {
-            text: "功能-自定义指令",
-            link: "feat_custom_op"
+            text: "参考手册",
+            link: "reference/states_enum",
           },
           {
-            text: "朱鸢示例",
-            link: "zhu_yuan/zhu_yuan_01",
+            text: "实战教程",
+            link: "tutorial/zhu_yuan_01",
           },
           {
-            text: "角色连招示例",
-            link: "character_special/intro",
-          },
-          {
-            text: "冷知识",
+            text: "冷门知识",
             link: "other/battle_knowledge",
           }
         ]

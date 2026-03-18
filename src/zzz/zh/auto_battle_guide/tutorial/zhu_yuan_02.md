@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 朱鸢配队教程-02-角色连招
+title: 02-角色连招-朱鸢
 ---
 
 ## 0.前置说明
@@ -53,11 +53,11 @@ scenes:
 
 </details>
 
-### 1.1.子处理方法数组(sub_handlers)
+### 1.1.子处理方法(sub_handlers)
 
-上述例子中我们使用了新的语法 `子状态(sub_handlers)`。
+上述例子中我们使用了新的语法 `子处理方法(sub_handlers)`。
 
-请戳这里学习 [处理方法](../basic/basic_04_handlers.md) 完成 `4.子处理方法数组` 部分学习。
+请戳这里学习 [处理方法](../basic/basic_04_handlers.md) 完成 `子处理方法` 部分学习。
 
 ## 2.节奏型连招
 
