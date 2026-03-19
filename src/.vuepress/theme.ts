@@ -37,6 +37,8 @@ export default hopeTheme({
   },
 
   plugins: {
+    redirect: false,
+
     icon: {
       assets: "fontawesome-with-brands",
     },
