@@ -1,7 +1,14 @@
 import { hopeTheme } from "vuepress-theme-hope";
 
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import { zhNavbar } from "./navbar/index.js";
+import { zhSidebar } from "./sidebar/index.js";
+
+const zhThemeLocale = {
+  navbar: zhNavbar,
+  sidebar: zhSidebar,
+  footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
+  displayFooter: true,
+};
 
 export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -11,7 +18,7 @@ export default hopeTheme({
     url: "https://one-dragon.com/",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  darkmode: "switch",
 
   logo: "/logo_zzz.ico",
 
@@ -19,26 +26,10 @@ export default hopeTheme({
 
   docsDir: "src",
 
-  locales: (() => {
-    const sharedLocaleConfig = {
-      navbar: zhNavbar,
-      sidebar: zhSidebar,
-      footer: "Theme by <a href=\"https://theme-hope.vuejs.press/\" target=\"_blank\">VuePress Theme Hope</a>",
-      displayFooter: true,
-    };
-
-    return {
-      "/en/": {
-        ...sharedLocaleConfig,
-        navbar: enNavbar,
-        sidebar: enSidebar,
-      },
-
-      "/zzz/": { ...sharedLocaleConfig, logo: "/logo_zzz.ico" },
-      "/sr/": { ...sharedLocaleConfig, logo: "/logo_sr.ico" },
-      "/": { ...sharedLocaleConfig },
-    };
-  })(),
+  locales: {
+    "/": zhThemeLocale,
+    "/zh/": zhThemeLocale,
+  },
 
   encrypt: {
     config: {
@@ -48,6 +39,10 @@ export default hopeTheme({
   },
 
   plugins: {
+    icon: {
+      assets: "fontawesome-with-brands",
+    },
+
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
     // comment: {
@@ -60,93 +55,6 @@ export default hopeTheme({
 
     components: {
       components: ["Badge", "VPCard"],
-    },
-
-    markdownHint: {
-      // Enable hint container, true by default
-      hint: true,
-      // Enable gfm alert
-      alert: true,
-    },
-
-    markdownImage: {
-      // Enable figure
-      figure: true,
-      // Enable image lazyload
-      lazyload: true,
-      // Enable image mark
-      mark: true,
-      // Enable image size
-      size: true,
-    },
-
-    // All features are enabled for demo, only preserve features you need here
-    mdEnhance: {
-      align: true,
-      attrs: true,
-      codetabs: true,
-      component: true,
-      demo: true,
-      include: true,
-      mark: true,
-      plantuml: true,
-      spoiler: true,
-      stylize: [
-        {
-          matcher: "Recommended",
-          replacer: ({ tag }) => {
-            if (tag === "em")
-              return {
-                tag: "Badge",
-                attrs: { type: "tip" },
-                content: "Recommended",
-              };
-          },
-        },
-      ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      tasklist: true,
-      vPre: true,
-
-      // Install chart.js before enabling it
-      // chart: true,
-
-      // insert component easily
-
-      // Install echarts before enabling it
-      // echarts: true,
-
-      // Install flowchart.ts before enabling it
-      // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // Install katex before enabling it
-      // katex: true,
-
-      // Install mathjax-full before enabling it
-      // mathjax: true,
-
-      // Install mermaid before enabling it
-      // mermaid: true,
-
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // Install reveal.js before enabling it
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-
-      // Install @vue/repl before enabling it
-      // vuePlayground: true,
-
-      // Install sandpack-vue3 before enabling it
-      // sandpack: true,
     },
 
     docsearch: {
@@ -217,5 +125,37 @@ export default hopeTheme({
     //     ],
     //   },
     // },
+  },
+
+  markdown: {
+    align: true,
+    alert: true,
+    attrs: true,
+    codeTabs: true,
+    component: true,
+    demo: true,
+    hint: true,
+    include: true,
+    mark: true,
+    plantuml: true,
+    spoiler: true,
+    stylize: [
+      {
+        matcher: "Recommended",
+        replacer: ({ tag }) => {
+          if (tag === "em")
+            return {
+              tag: "Badge",
+              attrs: { type: "tip" },
+              content: "Recommended",
+            };
+        },
+      },
+    ],
+    sub: true,
+    sup: true,
+    tabs: true,
+    tasklist: true,
+    vPre: true,
   },
 });
