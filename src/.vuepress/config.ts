@@ -36,7 +36,6 @@ export default defineUserConfig({
 
   locales: {
     "/": zhLocale,
-    "/zh/": zhLocale,
   },
 
   theme,

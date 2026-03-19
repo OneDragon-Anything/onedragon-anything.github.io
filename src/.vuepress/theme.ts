@@ -28,13 +28,11 @@ export default hopeTheme({
 
   locales: {
     "/": zhThemeLocale,
-    "/zh/": zhThemeLocale,
   },
 
   encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
-      "/zh/demo/encrypt.html": ["1234"],
     },
   },
 
@@ -134,7 +132,11 @@ export default hopeTheme({
     codeTabs: true,
     component: true,
     demo: true,
+    figure: true,
     hint: true,
+    imgLazyload: true,
+    imgMark: true,
+    imgSize: true,
     include: true,
     mark: true,
     plantuml: true,
