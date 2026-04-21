@@ -12,7 +12,7 @@ title: 点赞
 
 ### 无法访问Github?
 
-你可以尝试[本方法](visit_github.md)
+你可以尝试[本方法](../visit_github.md)
 
 ## 赞赏
 
