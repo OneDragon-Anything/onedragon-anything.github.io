@@ -77,12 +77,12 @@ export const zhNavbar = navbar([
         icon: "lightbulb",
         children: [
           {
-            text: "功能-战斗助手",
-            link: "feat_battle_assistant"
+            text: "功能-游戏助手",
+            link: "feat_game_assistant"
           },
           {
             text: "功能-一条龙",
-            link: "feat_one_dragon/quickstart"
+            link: "feat_one_dragon/onedragon"
           },
           {
             text: "功能-零号空洞",
@@ -91,10 +91,6 @@ export const zhNavbar = navbar([
           {
             text: "功能-锄大地",
             link: "feat_one_dragon/world_patrol"
-          },
-          {
-            text: "功能-游戏助手",
-            link: "feat_game_assistant"
           },
           {
             text: "功能-通知系统",
@@ -112,11 +108,11 @@ export const zhNavbar = navbar([
         prefix: "auto_battle_guide",
         children: [
           {
-            text: "基础教程",
+            text: "基础手册",
             link: "basic/basic_00_intro",
           },
           {
-            text: "参考手册",
+            text: "参考指南",
             link: "reference/states_enum",
           },
           {

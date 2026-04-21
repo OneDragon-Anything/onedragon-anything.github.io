@@ -58,50 +58,50 @@ export const zhSidebar = sidebar({
       icon: "lightbulb",
       children: [
         {
-          text: "功能-战斗助手",
-          link: "feat_battle_assistant"
+          text: "功能-游戏助手",
+          link: "feat_game_assistant"
         },
         {
           text: "功能-一条龙",
           collapsible: true,
           children: [
             {
-              text: "快速开始",
-              link: "feat_one_dragon/quickstart"
-            },
-            {
-              text: "随便观",
-              link: "feat_one_dragon/suibian"
-            },
-            {
-              text: "恶名狩猎计划",
-              link: "feat_one_dragon/notorious_hunt"
+              text: "一条龙",
+              link: "feat_one_dragon/onedragon"
             },
             {
               text: "体力计划",
               link: "feat_one_dragon/charge_plan"
             },
             {
-              text: "咖啡计划",
+              text: "恶名狩猎",
+              link: "feat_one_dragon/notorious_hunt"
+            },
+            {
+              text: "咖啡店",
               link: "feat_one_dragon/coffee"
+            },
+            {
+              text: "随便观",
+              link: "feat_one_dragon/suibian"
             },
             {
               text: "零号空洞",
               link: "feat_one_dragon/hollow_zero"
             },
             {
+              text: "式舆防卫战",
+              link: "feat_one_dragon/shiyu_defense"
+            },
+            {
               text: "锄大地",
               link: "feat_one_dragon/world_patrol"
             },
             {
-              text: "式舆防卫战",
-              link: "feat_one_dragon/shiyu_defense"
+              text: "拿命验收",
+              link: "feat_one_dragon/life_on_line"
             },
           ]
-        },
-        {
-          text: "功能-游戏助手",
-          link: "feat_game_assistant"
         },
         {
           text: "功能-通知系统",
@@ -119,7 +119,7 @@ export const zhSidebar = sidebar({
       prefix: "auto_battle_guide",
       children: [
         {
-          text: "基础教程",
+          text: "基础手册",
           collapsible: true,
           prefix: "basic/",
           children: [
@@ -158,7 +158,7 @@ export const zhSidebar = sidebar({
           ]
         },
         {
-          text: "参考手册",
+          text: "参考指南",
           collapsible: true,
           prefix: "reference/",
           children: [
@@ -225,4 +225,16 @@ export const zhSidebar = sidebar({
       ]
     }
   ],
+  "/oda/zh/": "structure",
+  "/oda/zh/develop/": "structure",
+  "/tools/zh/": "structure",
+  "/other/zh/": "structure",
+  "/other/zh/like/": "structure",
+  "/oda/": "structure",
+  "/oda/develop/": "structure",
+  "/tools/": "structure",
+  "/other/": "structure",
+  "/other/like/": "structure",
+  "/sr/": "structure",
+  "/zzz/": "structure",
 });
