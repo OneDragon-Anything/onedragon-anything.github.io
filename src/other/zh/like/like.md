@@ -1,6 +1,7 @@
 ---
 lang: zh-CN
 title: 点赞
+date: 2026-04-21
 ---
 
 ## Github Star

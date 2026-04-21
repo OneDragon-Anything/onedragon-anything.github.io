@@ -1,6 +1,7 @@
 ---
 lang: zh-CN
 title: 快速开始
+date: 2026-04-21
 ---
 
 ::: important

@@ -1,6 +1,7 @@
 ---
 lang: zh-CN
 title: 必要设置
+date: 2026-04-21
 ---
 
 ::: important
