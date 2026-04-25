@@ -1,11 +1,10 @@
 ---
 lang: zh-CN
 title: 路线图
-date: 2026-04-21
+date: 2026-04-25
 ---
 
 ## 2025年计划
-
 
 ### 2.0版本计划
 
@@ -17,3 +16,9 @@ date: 2026-04-21
   - 自更新模式
 - 框架
   - 重构画面建模方式
+
+## 2026年计划
+
+- 一条龙插件开发
+
+[插件仓库](https://github.com/OneDragon-Anything/ZZZ-OneDragon-Plugins)已创建，欢迎来PR
