@@ -85,16 +85,8 @@ export const zhNavbar = navbar([
             link: "feat_one_dragon/onedragon"
           },
           {
-            text: "功能-零号空洞",
-            link: "feat_one_dragon/hollow_zero"
-          },
-          {
-            text: "功能-锄大地",
-            link: "feat_one_dragon/world_patrol"
-          },
-          {
-            text: "功能-通知系统",
-            link: "feat_notify"
+            text: "设置-通知设置",
+            link: "setting_notify"
           },
           {
             text: "功能-手柄支持",

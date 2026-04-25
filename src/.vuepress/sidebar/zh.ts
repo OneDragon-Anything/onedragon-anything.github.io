@@ -104,8 +104,8 @@ export const zhSidebar = sidebar({
           ]
         },
         {
-          text: "功能-通知系统",
-          link: "feat_notify"
+          text: "设置-通知设置",
+          link: "setting_notify"
         },
         {
           text: "功能-手柄支持",
