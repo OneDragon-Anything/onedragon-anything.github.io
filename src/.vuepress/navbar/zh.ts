@@ -85,12 +85,12 @@ export const zhNavbar = navbar([
             link: "feat_one_dragon/onedragon"
           },
           {
-            text: "设置-通知设置",
-            link: "setting_notify"
+            text: "设置-游戏设置",
+            link: "setting_game"
           },
           {
-            text: "功能-手柄支持",
-            link: "feat_gamepad"
+            text: "设置-通知设置",
+            link: "setting_notify"
           }
         ]
       },
