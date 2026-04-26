@@ -116,7 +116,13 @@ export const zhSidebar = sidebar({
         {
           text: "功能-应用运行",
           link: "feat_standalone_app"
-        },
+        }
+      ],
+    },
+    {
+      text: "设置说明",
+      icon: "gear",
+      children: [
         {
           text: "设置-游戏设置",
           link: "setting_game"
