@@ -12,9 +12,9 @@ date: 2026-04-25
 
 ## 1.安装方式
 
-从 [Github](https://github.com/OneDragon-Anything/OneDragon-ScriptChainer/releases) 下载最新的 `OneDragon-ScriptChainer-vX.Y.Z.zip`，解压到任意目录即可使用。
+从 [GitHub](https://github.com/OneDragon-Anything/OneDragon-ScriptChainer/releases) 下载最新的 `OneDragon-ScriptChainer-vX.Y.Z.zip`，解压到任意目录即可使用。
 
-[点击此处查看访问Github和下载加速的帮助](../../other/zh/visit_github.md)
+[点击此处查看访问GitHub和下载加速的帮助](../../other/zh/visit_github.md)
 
 压缩包内主要有两个入口：
 
@@ -225,6 +225,6 @@ date: 2026-04-25
 
 ## 5.更多
 
-问题反馈请到 [Github Issue](https://github.com/OneDragon-Anything/OneDragon-ScriptChainer/issues)。
+问题反馈请到 [GitHub Issue](https://github.com/OneDragon-Anything/OneDragon-ScriptChainer/issues)。
 
 欢迎提供更多常用脚本的配置方式加入到默认选项中。
