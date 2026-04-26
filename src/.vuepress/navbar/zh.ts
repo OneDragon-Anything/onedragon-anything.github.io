@@ -63,9 +63,19 @@ export const zhNavbar = navbar([
         link: "quickstart",
       },
       {
+        text: "界面导航",
+        icon: "display",
+        link: "gui_guide",
+      },
+      {
         text: "必要设置",
         icon: "triangle-exclamation",
         link: "config",
+      },
+      {
+        text: "首次运行检查清单",
+        icon: "check-double",
+        link: "first_run_checklist",
       },
       {
         text: "常见问题",
@@ -83,6 +93,10 @@ export const zhNavbar = navbar([
           {
             text: "功能-一条龙",
             link: "feat_one_dragon/onedragon"
+          },
+          {
+            text: "功能-应用运行",
+            link: "feat_standalone_app"
           },
           {
             text: "设置-游戏设置",
