@@ -149,7 +149,7 @@ date: 2026-04-25
 - 脚本路径 - 选择 `MaaEnd.exe`。
 - 脚本进程名称 - 选择 `MaaEnd`。
 - 游戏进程名称 - 选择 `终末地`。
-- 脚本启动参数 - 按 MaaEnd 自身需要填写；不需要时留空。
+- 脚本启动参数 - 填入 `--autostart -q`，让 MaaEnd 启动后自动执行，并在结束后自动关闭自身。
 
 <a id="script-chainer-maagf2"></a>
 
