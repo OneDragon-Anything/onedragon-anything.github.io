@@ -2,7 +2,6 @@
 此系统旨在为一条龙应用提供标准化接口，为仓库扫描系统的开发提供数据决策支持
 ## 代理人信息管理
 ![feat_information_management_image_1.png](feat_information_management/feat_information_management_image_1.png)
-
 - 优先级自动分配
 用户通过在优先级表格中选择对应的词条后点击一键生成权重,系统将会自动针对权重进行分配到右侧权重配置表格中
 
@@ -14,6 +13,7 @@
 
 ## 驱动盘信息管理
 ![feat_information_management_image_2.png](feat_information_management/feat_information_management_image_2.png)
+
 定义了驱动盘的基础信息,可根据需要自行修改
 
 ## 音擎信息管理
