@@ -28,11 +28,11 @@
 
 ### 方式2:直接修改配置文件
 
-> 角色配置路径:assets\game_data\agent
++> 角色配置路径：`assets/game_data/agent`
 
-> 驱动盘配置路径:assets\game_data\drive_disk
++> 驱动盘配置路径：`assets/game_data/drive_disk`
 
-> 音擎配置路径:assets\game_data\engine_weapon
++> 音擎配置路径：`assets/game_data/engine_weapon`
 
 访问对应的路径后,即可对其中定义的yml文件进行直接修改
 
