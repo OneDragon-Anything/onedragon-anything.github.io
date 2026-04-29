@@ -1,7 +1,7 @@
 # 前言
 此系统旨在为一条龙应用提供标准化接口，为仓库扫描系统的开发提供数据决策支持
 ## 代理人信息管理
-<img width="1337" height="946" alt="image (1)" src="https://github.com/user-attachments/assets/24610f69-6f72-498c-8dd9-76a676ae23a9" />
+![feat_information_management_image_1.png](feat_information_management/feat_information_management_image_1.png)
 
 - 优先级自动分配
 用户通过在优先级表格中选择对应的词条后点击一键生成权重,系统将会自动针对权重进行分配到右侧权重配置表格中
@@ -13,11 +13,11 @@
 可根据需要对角色的名称,类型,属性,稀有度,code进行修改
 
 ## 驱动盘信息管理
-<img width="1336" height="947" alt="image (3)" src="https://github.com/user-attachments/assets/fe15ed53-6b55-4664-a3a1-877772cf143c" />
+![feat_information_management_image_2.png](feat_information_management/feat_information_management_image_2.png)
 定义了驱动盘的基础信息,可根据需要自行修改
 
 ## 音擎信息管理
-<img width="1334" height="948" alt="image (4)" src="https://github.com/user-attachments/assets/c212ed5e-c31f-4f7a-8fea-9fcc59fd85b9" />
+![feat_information_management_image_3.png](feat_information_management/feat_information_management_image_3.png)
 
 定义了音擎的基础信息,可根据需要自行修改
 
