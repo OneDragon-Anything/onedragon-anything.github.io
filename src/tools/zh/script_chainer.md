@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 千机链
-date: 2026-04-25
+date: 2026-05-31
 ---
 
 ## 0.简介
@@ -79,7 +79,7 @@ date: 2026-04-25
 | [一条龙](#script-chainer-zzz-od) / [一条龙-集成](#script-chainer-zzz-od) | `python.exe` / `OneDragon-RuntimeLauncher.exe` | [绝区零](#script-chainer-zzz-od) | `ZenlessZoneZero.exe` |
 | [BetterGI](#script-chainer-bettergi) | `BetterGI.exe` | [原神](#script-chainer-bettergi) / [原神 · 国际服](#script-chainer-bettergi) | `YuanShen.exe` / `GenshinImpact.exe` |
 | [三月七小助手](#script-chainer-march7th) | `March7th Assistant.exe` | [崩坏：星穹铁道](#script-chainer-march7th) | `StarRail.exe` |
-| [StarRailAssistant](#script-chainer-sra) | `SRA-cli.exe` / `SRA.exe` | [崩坏：星穹铁道](#script-chainer-sra) | `StarRail.exe` |
+| [StarRailAssistant](#script-chainer-sra) | `SRA.exe` | [崩坏：星穹铁道](#script-chainer-sra) | `StarRail.exe` |
 | [识宝小助手](#script-chainer-bh3) | `MFAAvalonia.exe` | [崩坏3](#script-chainer-bh3) | `BH3.exe` |
 | [MaaEnd](#script-chainer-maaend) | `MaaEnd.exe` | [终末地](#script-chainer-maaend) | `Endfield.exe` |
 | [MaaGF2Exilium](#script-chainer-maagf2) | `MaaGF2Exilium.exe` | [MUMU模拟器](#script-chainer-maagf2) | `MuMuNxDevice.exe` |
@@ -119,10 +119,10 @@ date: 2026-04-25
 ### 3.4.崩坏：星穹铁道 | StarRailAssistant
 
 - 使用前先运行 `SRA.exe` 完成 SRA 自身的任务配置。
-- 脚本路径 - 选择 SRA 解压目录中的 `SRA-cli.exe`。
+- 脚本路径 - 选择 SRA 解压目录中的 `SRA.exe`。
 - 脚本进程名称 - 选择 `StarRailAssistant`。
 - 游戏进程名称 - 选择 `崩坏：星穹铁道`。
-- 脚本启动参数 - 填入 `-e run Default + exit`，把 `Default` 换成实际配置名。`run` 会阻塞运行指定配置，完成后执行 `exit` 退出 SRA-cli。
+- 脚本启动参数 - 填入 `-e run Default + exit`，把 `Default` 换成实际配置名。`run` 会阻塞运行指定配置，完成后执行 `exit` 退出 SRA。
 
 <a id="script-chainer-bettergi"></a>
 
