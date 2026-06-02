@@ -83,12 +83,16 @@ export const zhSidebar = sidebar({
               link: "feat_one_dragon/notorious_hunt"
             },
             {
-              text: "咖啡店",
-              link: "feat_one_dragon/coffee"
-            },
-            {
               text: "随便观",
               link: "feat_one_dragon/suibian"
+            },
+            {
+              text: "录像店营业",
+              link: "feat_one_dragon/random_play"
+            },
+            {
+              text: "咖啡店",
+              link: "feat_one_dragon/coffee"
             },
             {
               text: "零号空洞",
