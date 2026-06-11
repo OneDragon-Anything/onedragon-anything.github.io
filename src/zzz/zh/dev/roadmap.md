@@ -20,5 +20,3 @@ date: 2026-04-25
 ## 2026年计划
 
 - 一条龙插件开发
-
-[插件仓库](https://github.com/OneDragon-Anything/ZZZ-OneDragon-Plugins)已创建，欢迎来PR
