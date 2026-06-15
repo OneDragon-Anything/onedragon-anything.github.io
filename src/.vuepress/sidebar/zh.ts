@@ -67,6 +67,10 @@ export const zhSidebar = sidebar({
           link: "feat_game_assistant"
         },
         {
+          text: "功能-信息管理",
+          link: "feat_information_management"
+        },
+        {
           text: "功能-一条龙",
           collapsible: true,
           children: [
