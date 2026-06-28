@@ -87,6 +87,10 @@ export const zhSidebar = sidebar({
               link: "feat_one_dragon/suibian"
             },
             {
+              text: "每日签到",
+              link: "feat_one_dragon/daily_signin"
+            },
+            {
               text: "录像店营业",
               link: "feat_one_dragon/random_play"
             },
