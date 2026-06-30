@@ -1,3 +1,10 @@
+---
+lang: zh-CN
+title: 简介
+order: 1
+date: 2026-07-01
+---
+
 ## ODA - OneDragon for Anything
 
 一条龙，是旨在自动化完成日常事务的框架。

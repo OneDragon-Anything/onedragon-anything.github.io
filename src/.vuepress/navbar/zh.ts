@@ -35,16 +35,6 @@ export const zhNavbar = navbar([
           }
         ]
       },
-      {
-        text: "贡献&开发",
-        prefix: "dev",
-        children: [
-          {
-            text: "说明",
-            link: "contribution",
-          }
-        ]
-      }
     ]
   },
   {
@@ -132,22 +122,34 @@ export const zhNavbar = navbar([
           }
         ]
       },
+    ],
+  },
+  {
+    text: "开发",
+    icon: "code-branch",
+    prefix: "/dev/zh",
+    children: [
+      {
+        text: "简介",
+        icon: "home",
+        link: "home"
+      },
+      {
+        text: "概念说明",
+        icon: "lightbulb",
+        link: "concept"
+      },
+      {
+        text: "路线图",
+        icon: "route",
+        link: "roadmap"
+      },
       {
         text: "贡献&开发",
         icon: "code-branch",
-        prefix: "dev",
-        children: [
-          {
-            text: "说明",
-            link: "contribution",
-          },
-          {
-            text: "路线图",
-            link: "roadmap",
-          }
-        ]
+        link: "contribution"
       }
-    ],
+    ]
   },
   {
     text: "小工具",

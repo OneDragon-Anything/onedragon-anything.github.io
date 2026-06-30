@@ -231,30 +231,13 @@ export const zhSidebar = sidebar({
           link: "other/battle_knowledge",
         }
       ]
-    },
-    {
-      text: "贡献&开发",
-      icon: "code-branch",
-      prefix: "dev",
-      children: [
-        {
-          text: "说明",
-          link: "contribution",
-        },
-        {
-          text: "路线图",
-          link: "roadmap",
-        }
-      ]
     }
   ],
-  "/oda/zh/": "structure",
-  "/oda/zh/develop/": "structure",
+  "/dev/zh/": "structure",
   "/tools/zh/": "structure",
   "/other/zh/": "structure",
   "/like/": "structure",
-  "/oda/": "structure",
-  "/oda/develop/": "structure",
+  "/dev/": "structure",
   "/tools/": "structure",
   "/other/": "structure",
   "/sr/": "structure",
