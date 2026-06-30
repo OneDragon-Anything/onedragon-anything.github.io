@@ -19,21 +19,8 @@ export const zhNavbar = navbar([
       },
       {
         text: "功能说明",
-        prefix: "docs",
-        children: [
-          {
-            text: "功能-一条龙",
-            link: "feat_one_dragon"
-          },
-          {
-            text: "功能-锄大地",
-            link: "feat_world_patrol"
-          },
-          {
-            text: "功能-模拟宇宙",
-            link: "feat_sim_uni"
-          }
-        ]
+        icon: "lightbulb",
+        link: "docs/feat_one_dragon"
       },
     ]
   },
@@ -70,57 +57,17 @@ export const zhNavbar = navbar([
       {
         text: "功能说明",
         icon: "lightbulb",
-        children: [
-          {
-            text: "功能-游戏助手",
-            link: "feat/feat_game_assistant"
-          },
-          {
-            text: "功能-一条龙",
-            link: "feat/feat_one_dragon/onedragon"
-          },
-          {
-            text: "功能-应用运行",
-            link: "feat/feat_standalone_app"
-          }
-        ]
+        link: "feat/feat_one_dragon/onedragon"
       },
       {
         text: "设置说明",
         icon: "gear",
-        children: [
-          {
-            text: "设置-游戏设置",
-            link: "setting/setting_game"
-          },
-          {
-            text: "设置-通知设置",
-            link: "setting/setting_notify"
-          }
-        ]
+        link: "setting/setting_game"
       },
       {
         text: "自动战斗教程",
         icon: "book",
-        prefix: "auto_battle_guide",
-        children: [
-          {
-            text: "基础手册",
-            link: "basic/basic_00_intro",
-          },
-          {
-            text: "参考指南",
-            link: "reference/states_enum",
-          },
-          {
-            text: "实战教程",
-            link: "tutorial/zhu_yuan_01",
-          },
-          {
-            text: "冷门知识",
-            link: "other/battle_knowledge",
-          }
-        ]
+        link: "auto_battle_guide/basic/basic_00_intro"
       },
     ],
   },
