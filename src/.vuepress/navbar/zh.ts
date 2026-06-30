@@ -83,15 +83,15 @@ export const zhNavbar = navbar([
         children: [
           {
             text: "功能-游戏助手",
-            link: "feat_game_assistant"
+            link: "feat/feat_game_assistant"
           },
           {
             text: "功能-一条龙",
-            link: "feat_one_dragon/onedragon"
+            link: "feat/feat_one_dragon/onedragon"
           },
           {
             text: "功能-应用运行",
-            link: "feat_standalone_app"
+            link: "feat/feat_standalone_app"
           }
         ]
       },
@@ -101,11 +101,11 @@ export const zhNavbar = navbar([
         children: [
           {
             text: "设置-游戏设置",
-            link: "setting_game"
+            link: "setting/setting_game"
           },
           {
             text: "设置-通知设置",
-            link: "setting_notify"
+            link: "setting/setting_notify"
           }
         ]
       },
@@ -188,7 +188,7 @@ export const zhNavbar = navbar([
   },
   {
     text: "点赞",
-    prefix: "/other/zh/like",
+    prefix: "/like",
     children: [
       {
         text: "点赞",

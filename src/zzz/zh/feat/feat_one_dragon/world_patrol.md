@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 锄大地
-date: 2026-05-31
+date: 2026-07-01
 ---
 
 使用本页说明的功能时，建议阅读以下内容：
@@ -28,7 +28,7 @@ date: 2026-05-31
 
 **相关帖子**：[锄大地使用方法](https://pd.qq.com/s/cofn3sf28?b=2)
 
-![锄大地](world_patrol/feat_world_patrol.png)
+![锄大地](world_patrol/world_patrol.png)
 
 ## 配置说明
 

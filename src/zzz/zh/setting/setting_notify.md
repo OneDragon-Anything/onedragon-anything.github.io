@@ -1,10 +1,10 @@
 ---
 lang: zh-CN
 title: 设置-通知设置
-date: 2026-04-26
+date: 2026-07-01
 ---
 
-本页对应一条龙界面左侧导航 `「设置」-「通知设置」` 中的配置项，主要说明运行结果推送、各通知方式的界面配置项和配置文件参数。不熟悉左侧各入口用途时，可先查看[界面导航](./gui_guide.md#设置页面)。
+本页对应一条龙界面左侧导航 `「设置」-「通知设置」` 中的配置项，主要说明运行结果推送、各通知方式的界面配置项和配置文件参数。不熟悉左侧各入口用途时，可先查看[界面导航](../gui_guide.md#设置页面)。
 
 ::: important
 
@@ -375,11 +375,11 @@ fs_appsecret: "xxx"   # 对应界面"自建应用 Secret"输入框
 
 1. 登录飞书/Lark客户端并创建一个群聊。
    - 打开群聊的*设置*界面，
-   ![feishu_img_1](feat_notify/feishu_img_1.png)
+   ![feishu_img_1](setting_notify/feishu_img_1.png)
    - 点击*群机器人*，
-   ![feishu_img_2.png](feat_notify/feishu_img_2.png)
+   ![feishu_img_2.png](setting_notify/feishu_img_2.png)
    - 选择*添加机器人*>*自定义机器人*。
-   ![feishu_img_3.png](feat_notify/feishu_img_3.png)
+   ![feishu_img_3.png](setting_notify/feishu_img_3.png)
    - 复制webhook地址，如：`https://open.feishu.cn/open-apis/bot/v2/hook/abc123def456`
 
 
@@ -393,15 +393,15 @@ fs_appsecret: "xxx"   # 对应界面"自建应用 Secret"输入框
 2. 图片支持配置（可选）：
    - 访问[飞书开放平台](https://open.feishu.cn/app) 或[Lark开放平台](https://open.larksuite.com/app)
    - 创建或选择一个应用.
-     ![feishu_img_4.png](feat_notify/feishu_img_4.png)
+     ![feishu_img_4.png](setting_notify/feishu_img_4.png)
    - 点击"添加应用能力"页面，赋予*机器人*能力。
-     ![feishu_img_5.png](feat_notify/feishu_img_5.png)
+     ![feishu_img_5.png](setting_notify/feishu_img_5.png)
    - 前往[飞书上传图片api](https://open.feishu.cn/document/server-docs/im-v1/image/create) 或[Lark上传图片api](https://open.larksuite.com/document/server-docs/im-v1/image/create)，给予应用*上传图片*权限。
-     ![feishu_img_6.png](feat_notify/feishu_img_6.png)
+     ![feishu_img_6.png](setting_notify/feishu_img_6.png)
    - 保存后前往应用基础页面，记录下你的appid和appsecret，并点击*创建版本*。
-     ![feishu_img_7.png](feat_notify/feishu_img_7.png)
+     ![feishu_img_7.png](setting_notify/feishu_img_7.png)
    - 写点东西发版
-     ![feishu_img_8.png](feat_notify/feishu_img_8.png)
+     ![feishu_img_8.png](setting_notify/feishu_img_8.png)
    - 在一条龙app内
      - 复制"App ID"填入界面"自建应用 App ID"输入框
      - 复制"App Secret"填入界面"自建应用 Secret"输入框

@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 点赞
-date: 2026-04-21
+date: 2026-07-01
 ---
 
 ## Github Star
@@ -13,7 +13,7 @@ date: 2026-04-21
 
 ### 无法访问Github?
 
-你可以尝试[本方法](../visit_github.md)
+你可以尝试[本方法](../other/zh/visit_github.md)
 
 ## 赞赏
 

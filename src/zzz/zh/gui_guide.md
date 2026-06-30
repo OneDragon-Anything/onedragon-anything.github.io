@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 界面导航
-date: 2026-04-26
+date: 2026-07-01
 ---
 
 ## 整体布局
@@ -33,7 +33,7 @@ date: 2026-04-26
 
 ## 游戏助手
 
-包含战斗助手和委托助手两个子页面。详细说明见[游戏助手功能文档](./feat_game_assistant.md)。
+包含战斗助手和委托助手两个子页面。详细说明见[游戏助手功能文档](./feat/feat_game_assistant.md)。
 
 ## 一条龙
 
@@ -41,16 +41,16 @@ date: 2026-04-26
 
 | 子页面 | 用途 |
 | --- | --- |
-| [一条龙运行](./feat_one_dragon/onedragon.md#一条龙运行) | 勾选要跑的日常功能，点击开始一键全清 |
-| [预备编队](./feat_one_dragon/onedragon.md#预备编队) | 配置和识别游戏内的预备编队 |
-| [体力计划](./feat_one_dragon/charge_plan.md) | 配置体力刷本的计划 |
-| [灵敏度校准](./feat_one_dragon/onedragon.md#灵敏度校准) | 校准鼠标/手柄的转向灵敏度 |
+| [一条龙运行](./feat/feat_one_dragon/onedragon.md#一条龙运行) | 勾选要跑的日常功能，点击开始一键全清 |
+| [预备编队](./feat/feat_one_dragon/onedragon.md#预备编队) | 配置和识别游戏内的预备编队 |
+| [体力计划](./feat/feat_one_dragon/charge_plan.md) | 配置体力刷本的计划 |
+| [灵敏度校准](./feat/feat_one_dragon/onedragon.md#灵敏度校准) | 校准鼠标/手柄的转向灵敏度 |
 
 此外，在「一条龙运行」子页面中，每个功能卡片旁有 ⚙️ 图标，点击可进入该功能的专属配置（如恶名狩猎计划、咖啡计划、式舆防卫战等）。
 
 ## 应用运行
 
-自由选择单个功能运行。详见[应用运行功能文档](./feat_standalone_app.md)。
+自由选择单个功能运行。详见[应用运行功能文档](./feat/feat_standalone_app.md)。
 
 ## 画中画
 
