@@ -4,7 +4,14 @@ title: Windows任务计划程序
 date: 2026-07-01
 ---
 
-你可以使用Windows任务计划程序定时运行bat或exe
+使用本页说明的功能时，建议阅读以下内容：
+::: important
+
+- 你可以使用 Windows 任务计划程序定时运行bat或exe
+- 因为 [Windows 任务计划程序中的优先级](https://vielhuber.de/zh-cn/blog-zh-cn/prioritaet-in-der-windows-aufgabenplanung-zh-cn/)，其启动某些脚本可能会遇到无法复现的神秘问题
+:::
+
+其实你可以放心使用 Windows 任务计划程序定时运行脚本，例如 bat 或 exe
 
 1. 在开始菜单中搜索并打开 `任务计划程序`
 2. 在 `任务计划程序库` 选择 `创建任务`
