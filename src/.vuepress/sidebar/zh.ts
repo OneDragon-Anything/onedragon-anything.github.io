@@ -63,11 +63,18 @@ export const zhSidebar = sidebar({
       icon: "lightbulb",
       children: [
         {
+          text: "功能-仪表盘",
+          icon: "home",
+          link: "feat/feat_dashboard"
+        },
+        {
           text: "功能-游戏助手",
+          icon: "gamepad",
           link: "feat/feat_game_assistant"
         },
         {
           text: "功能-一条龙",
+          icon: "bus",
           collapsible: true,
           children: [
             {
@@ -118,7 +125,13 @@ export const zhSidebar = sidebar({
         },
         {
           text: "功能-应用运行",
+          icon: "table-cells-large",
           link: "feat/feat_standalone_app"
+        },
+        {
+          text: "功能-画中画",
+          icon: "play",
+          link: "feat/pip"
         }
       ],
     },
