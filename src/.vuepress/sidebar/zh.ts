@@ -144,8 +144,24 @@ export const zhSidebar = sidebar({
           link: "setting/setting_game"
         },
         {
+          text: "设置-Overlay",
+          link: "setting/setting_overlay"
+        },
+        {
+          text: "设置-资源下载",
+          link: "setting/setting_resource_download"
+        },
+        {
+          text: "设置-脚本环境",
+          link: "setting/setting_env"
+        },
+        {
           text: "设置-通知设置",
           link: "setting/setting_notify"
+        },
+        {
+          text: "设置-自定义设置",
+          link: "setting/setting_custom"
         },
       ],
     },
