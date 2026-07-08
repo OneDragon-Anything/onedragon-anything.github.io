@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 拿命验收
+title: 真·拿命验收
 date: 2026-07-01
 ---
 

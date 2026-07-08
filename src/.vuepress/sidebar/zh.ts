@@ -118,7 +118,7 @@ export const zhSidebar = sidebar({
               link: "feat/feat_one_dragon/world_patrol"
             },
             {
-              text: "拿命验收",
+              text: "真·拿命验收",
               link: "feat/feat_one_dragon/life_on_line"
             },
           ]

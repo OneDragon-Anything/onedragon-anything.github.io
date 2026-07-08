@@ -33,7 +33,7 @@ date: 2026-07-01
 
 **核心原则：保证每个弱点都至少有一个编队勾选了。**
 
-![式舆防卫战](shiyu_defense/predefined_team.png)
+![式舆防卫战示例](shiyu_defense/shiyu_defense_example.png)
 
 - 操作方式：
   - 勾选某个编队对应的弱点类型 → 表示这个编队可以打这种弱点

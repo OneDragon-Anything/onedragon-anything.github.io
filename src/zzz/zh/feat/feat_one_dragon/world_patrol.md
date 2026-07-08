@@ -28,7 +28,7 @@ date: 2026-07-01
 
 **相关帖子**：[锄大地使用方法](https://pd.qq.com/s/cofn3sf28?b=2)
 
-![锄大地](world_patrol/world_patrol.png)
+![锄大地示例](world_patrol/world_patrol_example.png)
 
 ## 配置说明
 

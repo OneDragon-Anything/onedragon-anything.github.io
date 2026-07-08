@@ -276,4 +276,4 @@ options:
 OneDragon-Launcher.exe -o -c
 ```
 
-![properties_demonstration](quickstart/properties_demonstration.png)
+![启动参数示例](quickstart/command-line_arguments_example.png)

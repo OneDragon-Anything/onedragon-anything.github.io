@@ -1,6 +1,7 @@
 ---
 lang: zh-CN
 title: 项目简介
+date: 2026-07-08
 ---
 
 ![应用展示](/images/zzz/zzz_app.png)
@@ -12,7 +13,7 @@ title: 项目简介
 
 基于图像识别的自动化智能解决方案
 
-![软件截图和通知功能展示](/images/zzz/app.png)
+![✨ 简洁直观的操作界面 ✨](/images/zzz/app.webp)
 
 <div align="center">
     <div>
