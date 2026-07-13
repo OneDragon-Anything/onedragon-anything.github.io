@@ -21,10 +21,12 @@ date: 2026-07-02
 
 ### 1. 安装与启动
 
-- [ ] 已下载最新版安装包（推荐 `-Full-Environment` 超完整包）
-- [ ] 解压到**固态硬盘**的**纯英文、无空格**路径（如 `D:\ZZZ-OD`）
-- [ ] 以管理员身份运行安装器完成安装
-- [ ] 使用 `OneDragon-Launcher.exe` 能正常启动 GUI
+- [ ] 已选择一种方式完成安装，没有混用其他安装方式的文件
+- [ ] 程序位于**固态硬盘**的**纯英文、无空格**路径（如 `D:\ZZZ-OD`）
+- [ ] 已能按照所选方式正常启动 GUI
+  - 集成启动器：运行 `OneDragon-RuntimeLauncher.exe`
+  - 原始启动器：以管理员身份完成安装后，运行 `OneDragon-Launcher.exe`
+  - 源码运行：完成 `uv sync` 后，运行 `uv run python .\src\zzz_od\gui\app.py`
 
 安装细节请参考[快速开始](./quickstart.md)。
 
@@ -82,37 +84,3 @@ date: 2026-07-02
 ::: tip
 首次运行建议先不勾选全部功能，只选 2~3 个简单的（如邮件、活跃度奖励）测试一下，确认流程通畅后再全量运行。
 :::
-
-## 启动参数
-
-《绝区零》采用 Unity 游戏引擎开发，高级参数见[Unity 文档](https://docs.unity3d.com/Manual/PlayerCommandLineArguments.html)。
-
-启用后，脚本在启动游戏时可以控制游戏的分辨率和窗口，避免自己玩游戏后忘记调整设置导致脚本无法运行。
-
-## 设置页面说明
-
-以下只说明各设置页面的用途，具体配置项见对应页面。
-
-### 游戏设置
-
-在[「设置」→「游戏设置」](./setting/setting_game.md)页面，可以配置游戏基础、后台模式、启动参数和按键设置等内容。
-
-### Overlay
-
-在[「设置」→「Overlay」](./setting/setting_overlay.md)页面，可以配置运行时叠加层、识别绘制、状态面板、性能指标和 patched 截图等内容。
-
-### 资源下载
-
-在[「设置」→「资源下载」](./setting/setting_resource_download.md)页面，可以更新启动器、OCR 识别和专用识别模型。
-
-### 脚本环境
-
-在[「设置」→「脚本环境」](./setting/setting_env.md)页面，可以配置截图方法、调试模式、代码源、Python/Pip 下载源、网络代理和脚本按键等内容。
-
-### 通知设置
-
-在[「设置」→「通知设置」](./setting/setting_notify.md)页面，可以配置运行结果的通知推送。
-
-### 自定义设置
-
-在[「设置」→「自定义设置」](./setting/setting_custom.md)页面，可以配置界面语言、界面主题、自定义主题色和主页背景等外观选项。

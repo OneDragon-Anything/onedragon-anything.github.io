@@ -76,9 +76,9 @@ date: 2026-04-25
 
 ## 如何下载更新？
 
-软件下载请[点击前往](/zzz/zh/quickstart.html#download-package)
+软件下载请[点击前往](/zzz/zh/quickstart.html#_2-选择下载)
 
-软件更新请[点击前往](/zzz/zh/quickstart.html#update-package)
+软件更新请[点击前往](/zzz/zh/quickstart.html#_5-脚本如何更新)
 
 ## 神秘带锁功能
 
