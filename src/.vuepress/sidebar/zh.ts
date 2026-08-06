@@ -102,8 +102,12 @@ export const zhSidebar = sidebar({
               link: "feat/feat_one_dragon/notorious_hunt"
             },
             {
-              text: "零号空洞",
-              link: "feat/feat_one_dragon/hollow_zero"
+              text: "迷失之地",
+              link: "feat/feat_one_dragon/lost_void"
+            },
+            {
+              text: "枯萎之都",
+              link: "feat/feat_one_dragon/withered_domain"
             },
             {
               text: "式舆防卫战",
