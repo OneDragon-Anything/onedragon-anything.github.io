@@ -77,21 +77,6 @@ export const zhNavbar = navbar([
     prefix: "/dev/zh",
     children: [
       {
-        text: "简介",
-        icon: "home",
-        link: "home"
-      },
-      {
-        text: "概念说明",
-        icon: "lightbulb",
-        link: "concept"
-      },
-      {
-        text: "路线图",
-        icon: "route",
-        link: "roadmap"
-      },
-      {
         text: "贡献&开发",
         icon: "code-branch",
         link: "contribution"
