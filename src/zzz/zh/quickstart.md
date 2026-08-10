@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 快速开始
-date: 2026-07-13
+date: 2026-08-10
 ---
 
 使用本页说明的功能时，建议阅读以下内容：
@@ -9,7 +9,7 @@ date: 2026-07-13
 ::: important
 
 - 请使用最新版本安装包，旧安装包可能无法兼容当前代码或运行环境
-- [确认安装包最新版本](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases)
+- 确认安装包最新版本：[GitHub Releases](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases)、[CNB Releases](https://cnb.cool/OneDragon-Anything/ZenlessZoneZero-OneDragon/-/releases)
 - [确认代码最新版本](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/commits/main/)
 
 :::
@@ -49,7 +49,7 @@ E3 等较低配置可能存在算力不足或缺少必要指令集的问题，�
 
 ### 网络
 
-首次安装、代码同步、环境下载和模型更新都可能需要网络。`Full-Environment` 完整包可以减少环境下载，但不能完全替代后续的代码和资源更新。
+首次安装、代码同步、环境下载和模型更新都可能需要网络。`WithRuntime-Full` 和 `Full-Environment` 完整包可以减少首次安装时的环境或模型下载，但不能完全替代后续的代码和资源更新。
 
 如果安装、更新或资源下载失败，可先通过下方链接检查网络连通性。若同一类别的地址均无法访问，请尝试更换网络（如手机热点）；使用安装器时，也可以切换区域预设、下载源或网络代理。
 
@@ -60,6 +60,7 @@ E3 等较低配置可能存在算力不足或缺少必要指令集的问题，�
 
 - 代码仓库
   - [GitHub](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)
+  - [CNB](https://cnb.cool/OneDragon-Anything/ZenlessZoneZero-OneDragon)
   - [Gitee](https://gitee.com/OneDragon-Anything/ZenlessZoneZero-OneDragon)
 - Python/Pip
   - [官方pip源](https://pypi.org/)
@@ -74,7 +75,7 @@ E3 等较低配置可能存在算力不足或缺少必要指令集的问题，�
 
 ::: tip 不知道怎么选？
 
-普通用户推荐使用“集成启动器”：首次安装请下载带版本号的 `WithRuntime.zip`，解压后运行即可。
+普通用户推荐使用“集成启动器”：首次安装请选择带版本号的 `WithRuntime-Full.zip` 或 `WithRuntime.zip`，解压后运行即可。前者额外包含识别模型，后者会在使用时按需下载模型。
 
 无论使用哪种方式，安装和环境同步都需要下载或解压较多文件，请等待当前步骤明确完成。遇到问题时，请查看[排障文档](https://docs.qq.com/doc/p/7add96a4600d363b75d2df83bb2635a7c6a969b5)。
 
@@ -106,9 +107,11 @@ D:\ZZZ-OD
 ### 集成启动器（推荐，解压即用）
 
 1. 下载
-   - 从 [GitHub Release](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases) 下载 `ZenlessZoneZero-OneDragon-<版本>-WithRuntime.zip`
-   - 也可以使用 [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&arch=x64&channel=stable)（需要 Mirror CDK，<font color="red">选择 x64</font>，对应 `WithRuntime` 包）
-   - 安装包已经包含运行环境和程序代码，不需要安装 Python 或 uv
+   - 下载 `ZenlessZoneZero-OneDragon-<版本>-WithRuntime-Full.zip`，相比于 `ZenlessZoneZero-OneDragon-<版本>-WithRuntime.zip`，包含运行环境和程序代码，不需要安装 Python 或 uv
+      - 从 [GitHub Release](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases) 下载，网络要求特殊
+      - 从 [CNB Releases](https://cnb.cool/OneDragon-Anything/ZenlessZoneZero-OneDragon/-/releases) 下载
+      - 从 [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&arch=x64&channel=stable)（需要 Mirror CDK，<font color="red">选择 x64</font>，对应 `WithRuntime-Full` 包）
+   - 也可以下载 `ZenlessZoneZero-OneDragon-<版本>-WithRuntime.zip`，但其不包含识别模型，首次使用需要下载的内容更多。
    - 首次安装不能使用不带版本号的 `RuntimeLauncher.zip`，该压缩包只用于更新已有环境
 2. 解压
    - 按照上方的[安装路径要求](#安装路径要求)，将压缩包完整解压到最终目录
@@ -119,30 +122,27 @@ D:\ZZZ-OD
    - 后续启动会根据 `自动更新` 设置检查程序更新
 4. 后续更新
    - `ZenlessZoneZero-OneDragon-RuntimeLauncher.zip` 只用于更新已有的集成启动器环境
-   - 首次安装不能使用该更新包，必须下载带版本号的 `WithRuntime.zip`
+   - 首次安装不能使用该更新包，必须下载带版本号的 `WithRuntime-Full.zip` 或 `WithRuntime.zip`
 
 ### 原始启动器（安装器引导安装）
 
 1. 下载
-   - 从 [GitHub Release](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases) 下载
-   - 也可以使用 [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&arch=arm64&channel=stable)（需要 Mirror CDK，<font color="red">选择 arm64</font>，对应 `Full-Environment` 包）
-   - 不知道选哪个：下载 `ZenlessZoneZero-OneDragon-<版本>-Full-Environment.zip`，其中包含安装器、启动器、打包时的程序代码、识别模型和离线环境资源，需要额外下载的内容最少
-   - 可以联网下载运行环境：下载 `ZenlessZoneZero-OneDragon-<版本>-Full.zip`
-   - 只下载精简安装器、其余内容联网获取：下载 `ZenlessZoneZero-OneDragon-<版本>-Installer.exe`
+   - 下载 `ZenlessZoneZero-OneDragon-<版本>-Full-Environment.zip`，其中包含安装器、启动器、打包时的程序代码、识别模型和离线环境资源
+      - 从 [GitHub Release](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases) 下载，网络要求特殊
+      - 从 [CNB Releases](https://cnb.cool/OneDragon-Anything/ZenlessZoneZero-OneDragon/-/releases) 下载
+      - 从 [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&arch=arm64&channel=stable)（需要 Mirror CDK，<font color="red">选择 arm64</font>，对应 `Full-Environment` 包）
 2. 运行安装器
    - 以管理员身份运行 `OneDragon-Installer.exe`，选择符合[安装路径要求](#安装路径要求)的最终安装目录
-   - 不能选择磁盘根目录
-   - 路径必须为纯英文且不能包含空格
    - 目标目录不为空时，安装器会提示内容可能被覆盖；首次安装建议使用空目录
-   - 安装器与目标目录不同时，会按照安装清单搬运并校验文件
 3. 配置源（觉得麻烦？请使用[集成启动器](#集成启动器-推荐-解压即用)）
-   - `地区选择` <font color="red">会填入理论预设好的源和网络代理设置</font>。请根据当前网络选择一个预设：
+   - `地区选择` <font color="red">会批量填写源和网络代理设置</font>。请根据当前网络选择一个预设：
      <details>
        <summary>点击查看 <code>地区选择</code> 预设说明</summary>
 
-       - `中国 - Gitee`：适用于国内且 Gitee 可用的网络；选择后会自动将代码仓库、环境下载源和 Python 下载源设为 Gitee，Pip 源设为阿里云，代理类型设为 `GitHub 代理`。
-       - `中国 - GitHub 代理`：适用于国内 Gitee 不稳定、但免费 GitHub 代理可用的网络；选择后会自动将代码仓库、环境下载源和 Python 下载源设为 GitHub，Pip 源设为阿里云，代理类型设为 `GitHub 代理`。
-       - `海外`：适用于海外网络，或已使用 TUN/全局模式、路由器代理并能直接访问 GitHub 的网络；选择后会自动将代码仓库、环境下载源和 Python 下载源设为 GitHub，Pip 源设为官方，代理类型设为 `无`。
+       - `中国 - CNB`：适用于国内且 CNB 可用的网络；选择后会自动将 `代码仓库`、`环境下载源` 和 `Python下载源` 设为 CNB，`Pip源` 设为阿里云，`代理类型` 设为 `无`。
+       - `中国 - Gitee`：适用于国内且 Gitee 可用的网络；选择后会自动将 `代码仓库`、`环境下载源` 和 `Python下载源` 设为 Gitee，`Pip源` 设为阿里云，`代理类型` 设为 `无`。
+       - `中国 - GitHub 代理`：适用于国内 CNB、Gitee 不可用，但免费 GitHub 代理可用的网络；选择后会自动将 `代码仓库`、`环境下载源` 和 `Python下载源` 设为 GitHub，`Pip源` 设为阿里云，`代理类型` 设为 `GitHub 代理`。
+       - `海外`：适用于海外网络，或已使用 TUN/全局模式、路由器代理并能直接访问 GitHub 的网络；选择后会自动将 `代码仓库`、`环境下载源` 和 `Python下载源` 设为 GitHub，`Pip源` 设为官方，`代理类型` 设为 `无`。
 
        </details>
 4. 开始安装
@@ -157,8 +157,8 @@ D:\ZZZ-OD
   3. ~~更换免费代理地址：保持 `代理类型` 为 `GitHub 代理`，仅更换下方的 `免费代理地址`。~~
 - 只有某一类下载失败：
   1. `代码同步` 失败：修改 `代码仓库`。
-  2. UV/Python 压缩包下载失败：修改 `环境下载源`，不需要单独修改 `Python 下载源`。
-  3. 运行依赖安装失败：修改 `Pip 源`，可选官方、清华大学或阿里云。
+  2. UV/Python 压缩包下载失败：修改 `环境下载源`，不需要单独修改 `Python下载源`。
+  3. 运行依赖安装失败：修改 `Pip源`，可选官方、清华大学或阿里云。
 - 以上方法都无法解决：
   1. `更换网络`：尝试使用手机热点，通常可以快速排除当前网络的限制。
   2. `检查连通性`：返回上方的[网络](#网络)章节，展开 `查看常用连接测试地址`，确认各类地址是否可以访问。
@@ -256,8 +256,8 @@ D:\ZZZ-OD
      - <font color="red">点击主界面左侧底部的 `代码同步` 可手动更新，也可以切换分支或开启 `强制更新`</font>
    - 关闭 `自动更新` 后，启动器会跳过自动代码更新
    - 主界面标题栏会显示当前启动器版本和代码版本，点击版本号可以复制
-   - 如果提示 `运行环境不兼容`，请更新集成启动器；仍无法更新时，重新下载新版 `WithRuntime.zip`
-   - [CNB](https://cnb.cool/OneDragon-Anything/ZenlessZoneZero-OneDragon) 仅作为项目代码的同步镜像，不参与启动器自动更新；启动器内的 `代码源` 仍选择 GitHub 或 Gitee
+   - 如果提示 `运行环境不兼容`，请更新集成启动器；仍无法更新时，重新下载新版 `WithRuntime-Full.zip` 或 `WithRuntime.zip`
+   - 在 `设置 → 脚本环境` 的 `代码源` 中可选择 `自动`、GitHub、CNB 或 Gitee；`自动` 会在失败或超时后继续尝试其他代码源，并优先使用上次成功的源
 2. 启动器
    - 在 `设置 → 资源下载` 中选择 `原始启动器` 或 `集成启动器`，再选择稳定版或测试版进行更新
    - 手动更新时，原始启动器使用 `Launcher.zip`，集成启动器使用 `RuntimeLauncher.zip`
@@ -266,7 +266,7 @@ D:\ZZZ-OD
    - 在 `设置 → 资源下载` 中更新 OCR、闪光识别、空洞格子识别和迷失之地识别模型
    - 模型名称后的数字通常代表版本日期，优先选择较新的兼容版本
 4. 重新安装或修复
-   - 集成启动器：重新下载当前版本 `WithRuntime.zip`
+   - 集成启动器：重新下载当前版本 `WithRuntime-Full.zip` 或 `WithRuntime.zip`
    - 原始启动器：重新下载当前版本安装器或完整包
    - 源码运行：重新执行 `uv sync`；代码目录损坏或无法正常同步时，再重新克隆仓库
 
