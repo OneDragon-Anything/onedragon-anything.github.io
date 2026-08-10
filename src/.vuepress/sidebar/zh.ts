@@ -82,18 +82,6 @@ export const zhSidebar = sidebar({
               link: "feat/feat_one_dragon/onedragon"
             },
             {
-              text: "体力计划",
-              link: "feat/feat_one_dragon/charge_plan"
-            },
-            {
-              text: "恶名狩猎",
-              link: "feat/feat_one_dragon/notorious_hunt"
-            },
-            {
-              text: "随便观",
-              link: "feat/feat_one_dragon/suibian"
-            },
-            {
               text: "每日签到",
               link: "feat/feat_one_dragon/daily_signin"
             },
@@ -106,12 +94,28 @@ export const zhSidebar = sidebar({
               link: "feat/feat_one_dragon/coffee"
             },
             {
-              text: "零号空洞",
-              link: "feat/feat_one_dragon/hollow_zero"
+              text: "体力计划",
+              link: "feat/feat_one_dragon/charge_plan"
+            },
+            {
+              text: "恶名狩猎",
+              link: "feat/feat_one_dragon/notorious_hunt"
+            },
+            {
+              text: "迷失之地",
+              link: "feat/feat_one_dragon/lost_void"
+            },
+            {
+              text: "枯萎之都",
+              link: "feat/feat_one_dragon/withered_domain"
             },
             {
               text: "式舆防卫战",
               link: "feat/feat_one_dragon/shiyu_defense"
+            },
+            {
+              text: "随便观",
+              link: "feat/feat_one_dragon/suibian"
             },
             {
               text: "锄大地",

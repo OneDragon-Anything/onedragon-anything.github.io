@@ -70,8 +70,8 @@ date: 2026-07-01
 
 | 应用名称 | 说明 | 有专属设置 |
 | --- | --- | --- |
-| [枯萎之都](./feat_one_dragon/hollow_zero.md#2零号空洞-枯萎之都) | 自动打开 `快捷手册-作战` 按配置完成枯萎之都的相关挑战 | ⚙️ |
-| [迷失之地](./feat_one_dragon/hollow_zero.md#1零号空洞-迷失之地) | 自动打开 `快捷手册-作战` 按配置完成迷失之地的相关挑战 | ⚙️ |
+| [迷失之地](./feat_one_dragon/lost_void.md) | 自动打开 `快捷手册-作战` 按配置完成迷失之地的相关挑战 | ⚙️ |
+| [枯萎之都](./feat_one_dragon/withered_domain.md) | 自动打开 `快捷手册-作战` 按配置完成枯萎之都的相关挑战 | ⚙️ |
 | [式舆防卫战](./feat_one_dragon/shiyu_defense.md) | 自动打开 `快捷手册-作战` 按配置完成式舆防卫战相关挑战 | ⚙️ |
 | [锄大地](./feat_one_dragon/world_patrol.md) | 自动前往 `航天城` 按配置清理野怪以刷取基础材料 | ⚙️ |
 | [真·拿命验收](./feat_one_dragon/life_on_line.md) | 自动前往 `H.D.D. 第二章间章-战斗委托-真·拿命验收` 按配置刷取丁尼 | ⚙️ |
