@@ -107,7 +107,7 @@ D:\ZZZ-OD
 ### 集成启动器（推荐，解压即用）
 
 1. 下载
-   - 下载 `ZenlessZoneZero-OneDragon-<版本>-WithRuntime-Full.zip`，相比于 `ZenlessZoneZero-OneDragon-<版本>-WithRuntime.zip`，包含运行环境和程序代码，不需要安装 Python 或 uv
+   - 下载 `ZenlessZoneZero-OneDragon-<版本>-WithRuntime-Full.zip`，包含运行环境和程序代码，不需要安装 Python 或 uv
       - 从 [GitHub Release](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/releases) 下载，网络要求特殊
       - 从 [CNB Releases](https://cnb.cool/OneDragon-Anything/ZenlessZoneZero-OneDragon/-/releases) 下载
       - 从 [Mirror酱](https://mirrorchyan.com/zh/projects?rid=ZZZ-OneDragon&arch=x64&channel=stable)（需要 Mirror CDK，<font color="red">选择 x64</font>，对应 `WithRuntime-Full` 包）
