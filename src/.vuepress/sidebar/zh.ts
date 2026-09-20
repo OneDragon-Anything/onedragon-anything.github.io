@@ -140,6 +140,11 @@ export const zhSidebar = sidebar({
       ],
     },
     {
+      text: "资源管理",
+      icon: "arrows-rotate",
+      link: "resource_management"
+    },
+    {
       text: "设置说明",
       icon: "gear",
       children: [
@@ -150,10 +155,6 @@ export const zhSidebar = sidebar({
         {
           text: "设置-Overlay",
           link: "setting/setting_overlay"
-        },
-        {
-          text: "设置-资源下载",
-          link: "setting/setting_resource_download"
         },
         {
           text: "设置-脚本环境",
