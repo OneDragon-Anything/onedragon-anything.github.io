@@ -60,6 +60,11 @@ export const zhNavbar = navbar([
         link: "feat/feat_one_dragon/onedragon"
       },
       {
+        text: "资源管理",
+        icon: "arrows-rotate",
+        link: "resource_management"
+      },
+      {
         text: "设置说明",
         icon: "gear",
         link: "setting/setting_game"
