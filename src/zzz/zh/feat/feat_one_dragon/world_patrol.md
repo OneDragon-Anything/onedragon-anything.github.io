@@ -5,11 +5,10 @@ date: 2026-07-01
 ---
 
 使用本页说明的功能时，建议阅读以下内容：
-:::important
+::: important
 
-- 锄大地功能意见或问题，请前往[issue](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/issues)或[PR](https://github.com/OneDragon-Anything/ZenlessZoneZero-OneDragon/pulls)
-- 首次使用前，建议运行一次[灵敏度校准](./onedragon.md#灵敏度校准)
 - 路线相关功能（`路线列表`、`大地图录制`、`锄地路线录制`）属于进阶/开发向功能，绝大多数用户<font color="red">无需自行录制或编辑名单</font>，[锄大地配置](#锄大地配置)的 `路线名单` 保持默认 `全部` 即可。仅在需要补充新区域、修正路线或自定义运行范围时，才需要用到这些内容
+- 首次使用前，建议运行一次[灵敏度校准](./onedragon.md#灵敏度校准)
 :::
 
 ## 功能说明
