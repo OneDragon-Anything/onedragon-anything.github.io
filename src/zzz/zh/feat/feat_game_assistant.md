@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 功能-游戏助手
-date: 2026-07-01
+date: 2026-10-30
 ---
 
 使用本页说明的功能时，建议阅读以下内容：
@@ -67,7 +67,7 @@ date: 2026-07-01
 5. 自动战斗开关：按键后进入/退出自动战斗模式。退出后才可以进入自动闪避模式。
 6. 钓鱼详解
 
-![game_assisant_fishing_1.png](feat_game_assistant/game_assistant_fishing_1.png)
+![game_assisant_fishing_1.png](./feat_game_assistant/game_assistant_fishing_1.png)
 <details>
 <summary> 隐藏功能-钓鱼详解</summary>
 
@@ -77,7 +77,7 @@ date: 2026-07-01
 
 - 进入委托助手，点击`▶️开始`启动委托助手
 
-![game_assisant_fishing_2.png](feat_game_assistant/game_assistant_fishing_2.png)
+![game_assisant_fishing_2.png](./feat_game_assistant/game_assistant_fishing_2.png)
 
 （对 就点这儿 没有钓鱼是正常的 你就点开始就完了）
 - 双手离开键盘。app会自动锁定zzz屏幕焦点。

@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 功能-应用运行
-date: 2026-07-01
+date: 2026-10-30
 ---
 
 使用本页说明的功能时，建议阅读以下内容：
@@ -51,9 +51,9 @@ date: 2026-07-01
 | --- | --- |
 | [迷失之地](./feat_one_dragon/lost_void.md) | 自动打开 `快捷手册-作战` 按配置完成迷失之地的相关挑战 |
 | [枯萎之都](./feat_one_dragon/withered_domain.md) | 自动打开 `快捷手册-作战` 按配置完成枯萎之都的相关挑战 |
-| [式舆防卫战](./feat_one_dragon/shiyu_defense.md) | 自动打开 `快捷手册-作战` 按配置完成式舆防卫战相关挑战 |
+| [式舆防卫战](./feat_one_dragon/shiyu_defense.md) | 自动打开 `快捷手册-作战` 完成式舆防卫战剧变节点挑战（自动扫描配队，无需配置） |
+| [情报板](./feat_one_dragon/intel_board.md) | 自动打开 `情报板` 按配置接取并完成代行委托 |
 | [锄大地](./feat_one_dragon/world_patrol.md) | 自动前往 `航天城` 按配置清理野怪以刷取基础材料 |
-| [真·拿命验收](./feat_one_dragon/life_on_line.md) | 自动前往 `H.D.D. 第二章间章-战斗委托-真·拿命验收` 按配置刷取丁尼 |
 
 ### 3. 选择并运行
 
