@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 快速开始
-date: 2026-08-10
+date: 2026-10-30
 ---
 
 使用本页说明的功能时，建议阅读以下内容：
@@ -295,4 +295,4 @@ D:\ZZZ-OD
    OneDragon-Launcher.exe -o -c
    ```
 
-![原始启动器快捷方式示例](quickstart/command-line_arguments_example.png)
+![原始启动器快捷方式示例](./quickstart/command-line_arguments_example.png)

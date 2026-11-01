@@ -114,16 +114,16 @@ export const zhSidebar = sidebar({
               link: "feat/feat_one_dragon/shiyu_defense"
             },
             {
+              text: "情报板",
+              link: "feat/feat_one_dragon/intel_board"
+            },
+            {
               text: "随便观",
               link: "feat/feat_one_dragon/suibian"
             },
             {
               text: "锄大地",
               link: "feat/feat_one_dragon/world_patrol"
-            },
-            {
-              text: "真·拿命验收",
-              link: "feat/feat_one_dragon/life_on_line"
             },
           ]
         },

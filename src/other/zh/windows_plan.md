@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: Windows任务计划程序
-date: 2026-07-01
+date: 2026-10-30
 ---
 
 使用本页说明的功能时，建议阅读以下内容：
@@ -22,7 +22,7 @@ date: 2026-07-01
    - 勾选 `使用最高权限运行`
    - 配置选择 `Windows 10` (或11)
 
-   ![常规页面配置](windows_plan/windows_plan_1.png)
+   ![常规页面配置](./windows_plan/windows_plan_1.png)
 
 4. 触发器页面填写 (可按需修改)
    - 点击 `新建`
@@ -30,7 +30,7 @@ date: 2026-07-01
    - 更改要开始运行的时间，例如 `04:00:00`
    - 确定
 
-   ![触发器页面配置](windows_plan/windows_plan_2.png)
+   ![触发器页面配置](./windows_plan/windows_plan_2.png)
 
 5. 操作页面填写 (可按需修改)
    - 点击 `新建`
@@ -38,6 +38,6 @@ date: 2026-07-01
    - 添加参数，按需填写
    - 确定
 
-   ![操作页面配置](windows_plan/windows_plan_3.png)
+   ![操作页面配置](./windows_plan/windows_plan_3.png)
 
 6. 条件和设置页面保持默认即可

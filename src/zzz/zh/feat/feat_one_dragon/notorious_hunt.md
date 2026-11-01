@@ -1,7 +1,7 @@
 ---
 lang: zh-CN
 title: 恶名狩猎
-date: 2026-07-01
+date: 2026-10-30
 ---
 
 使用本页说明的功能时，建议阅读以下内容：
@@ -45,4 +45,4 @@ date: 2026-07-01
 （真）典型使用方式：不打深度追猎的话，体力计划里不放这条计划就行，`恶名狩猎` 单独跑也能拿满每周奖励。
 :::
 
-![恶名狩猎示例](notorious_hunt/notorious_hunt_example.png)
+![恶名狩猎示例](./notorious_hunt/notorious_hunt_example.png)
