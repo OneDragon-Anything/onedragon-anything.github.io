@@ -1,0 +1,1 @@
+var e=`/images/sponsor_wechat.png`;export{e as t};
