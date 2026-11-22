@@ -25,7 +25,7 @@ date: 2026-10-30
 - [ ] 程序位于**固态硬盘**的**纯英文、无空格**路径（如 `D:\ZZZ-OD`）
 - [ ] 已能按照所选方式正常启动 GUI
   - 集成启动器：运行 `OneDragon-RuntimeLauncher.exe`
-  - 原始启动器：以管理员身份完成安装后，运行 `OneDragon-Launcher.exe`
+  - 源码启动器：以管理员身份完成安装后，运行 `OneDragon-Launcher.exe`
   - 源码运行：完成 `uv sync` 后，运行 `uv run python .\src\zzz_od\gui\app.py`
 
 安装细节请参考[快速开始](./quickstart.md)。
